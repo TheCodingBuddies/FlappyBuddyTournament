@@ -1,0 +1,14 @@
+# Virtuelle Umgebungen
+env/
+venv/
+ENV/
+.venv/
+.pytest_cache/
+
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+### Mac OS ###
+.DS_Store
