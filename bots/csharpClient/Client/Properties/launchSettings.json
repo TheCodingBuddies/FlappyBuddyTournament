@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Client": {
+      "commandName": "Project",
+      "commandLineArgs": "-n FirstAi -s localhost -p 5050"
+    }
+  }
+}
