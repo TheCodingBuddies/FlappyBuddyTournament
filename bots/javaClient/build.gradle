@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'cb'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.java-websocket:Java-WebSocket:1.5.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.7.1'
+    implementation 'org.slf4j:slf4j-nop:2.0.7'
+}
+
+//application {
+//    mainClass = 'cb.Main'
+//}
+
+test {
+    useJUnitPlatform()
+}
