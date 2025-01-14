@@ -35,7 +35,7 @@ static void OnError(IEnumerable<Error> errors)
 
 public class Options
 {
-    [Option('n', "name", Default = "FirstAi", HelpText = "Name for your bot")]
+    [Option('n', "name", Default = "MyAi", HelpText = "Name for your bot")]
     public string? Name { get; set; }
 
     [Option('s', "server", Default = "localhost", HelpText = "Server with running Flappy Buddy Service")]

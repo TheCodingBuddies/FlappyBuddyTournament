@@ -12,12 +12,12 @@ namespace CsClient.Bots.Internal
             Type? type = assembly.GetType(className);
             if (type is null)
             {
-                return new FirstAi();
+                return new MyAi();
             }
             else
             {
                 var instance = Activator.CreateInstance(type) as IBot;
-                return instance ?? new FirstAi();
+                return instance ?? new MyAi();
             }
         }
     }

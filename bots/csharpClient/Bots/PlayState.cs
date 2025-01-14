@@ -7,8 +7,8 @@ namespace CsClient.Bots
     /// </summary>
     public class PlayState
     {
-        [JsonPropertyName("reference_ticks_ms")]
-        public int RefTicks { get; set; }
+        [JsonPropertyName("level_time")]
+        public float LevelTime { get; set; }
         
         [JsonPropertyName("player")]
         public Player Player { get; set; }
@@ -20,9 +20,9 @@ namespace CsClient.Bots
         {
         }
 
-        public PlayState(int refTicks,Player player, List<Obstacle> obstacles)
+        public PlayState(float levelTime,Player player, List<Obstacle> obstacles)
         {
-            RefTicks = refTicks;
+            LevelTime = levelTime;
             Player = player;
             Obstacles = obstacles;
         }
