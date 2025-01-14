@@ -7,8 +7,8 @@ import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PlayState {
-    @JsonProperty("reference_ticks_ms")
-    private int refTicks;
+    @JsonProperty("level_time")
+    private float levelTime;
 
     @JsonProperty("player")
     private Player player;
@@ -19,12 +19,12 @@ public class PlayState {
     public PlayState() {
     }
 
-    public int getRefTicks() {
-        return refTicks;
+    public float getLevelTime() {
+        return levelTime;
     }
 
-    public void setRefTicks(int refTicks) {
-        this.refTicks = refTicks;
+    public void setLevelTime(float levelTime) {
+        this.levelTime = levelTime;
     }
 
     public Player getPlayer() {

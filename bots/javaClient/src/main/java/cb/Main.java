@@ -11,7 +11,7 @@ public class Main {
         if (args.length > 0) {
             return AiFactory.create(args[0]);
         } else {
-            return AiFactory.create("FirstAI");
+            return AiFactory.create("MyAI");
         }
     }
 
