@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import List, Union, Literal
+from typing import List
 
 
 @dataclass
@@ -20,7 +20,7 @@ class Player:
 
 @dataclass
 class Obstacle:
-    type: Union[Literal["Coin"], Literal["Seagull"], Literal["Raven"]]
+    type: str
     origin_x: float
     origin_y: float
     height: int
@@ -40,12 +40,12 @@ class FromServerPacket(ABC):
 
 @dataclass
 class PlayState(FromServerPacket):
-    ref_ticks: int
+    level_time: float
     player: Player
     obstacles: List[Obstacle]
 
     @staticmethod
     def from_dict(data: dict) -> PlayState:
-        ref_ticks = data["reference_ticks_ms"]
+        ref_ticks = data["level_time"]
         obstacles = [Obstacle.from_dict(entry) for entry in data['obstacles']]
         return PlayState(ref_ticks, Player.from_dict(data["player"]), obstacles)
