@@ -1,7 +1,7 @@
 mod error;
-use error::BotResult;
 
 use async_trait::async_trait;
+use error::BotResult;
 use futures_util::{
     stream::{SplitSink, SplitStream},
     SinkExt, StreamExt,
@@ -12,9 +12,6 @@ use tokio_tungstenite::{connect_async, tungstenite::Message, MaybeTlsStream, Web
 
 #[cfg(feature = "enable-tracing")]
 use tracing::{error, info, trace};
-
-// Bring necessary types into scope
-use serde_json::{from_str, to_string};
 
 #[derive(Deserialize, Debug)]
 pub struct Obstacle {
@@ -62,34 +59,17 @@ impl FlappyBot {
         #[cfg(feature = "enable-tracing")]
         info!("Starting FlappyBot");
 
-        let (message_sender, message_receiver) = mpsc::channel::<String>(64);
-        let (consumer_sender, mut consumer_receiver) = mpsc::channel::<String>(64);
+        let (message_sender, message_receiver) = mpsc::channel::<Trigger>(64);
+        let (consumer_sender, mut consumer_receiver) = mpsc::channel::<PlayState>(64);
 
         tokio::spawn(async move {
-            while let Some(message) = consumer_receiver.recv().await {
-                let play_state: PlayState = match from_str(&message) {
-                    Ok(state) => state,
-                    Err(error) => {
-                        #[cfg(feature = "enable-tracing")]
-                        error!("Failed to deserialize message: {error}");
-                        continue;
-                    }
-                };
+            while let Some(play_state) = consumer_receiver.recv().await {
                 #[cfg(feature = "enable-tracing")]
                 trace!("Received play_state for handling: {play_state:?}");
 
                 let response = consumer.handle_message(play_state).await;
 
-                let response_string = match to_string(&response) {
-                    Ok(json) => json,
-                    Err(error) => {
-                        #[cfg(feature = "enable-tracing")]
-                        error!("Failed to serialize response: {error}");
-                        continue;
-                    }
-                };
-
-                if let Err(error) = message_sender.send(response_string).await {
+                if let Err(error) = message_sender.send(response).await {
                     error!("{error}");
                 };
             }
@@ -105,12 +85,12 @@ impl FlappyBot {
 }
 
 struct SocketHandler {
-    pub(crate) sender: mpsc::Sender<String>,
-    pub(crate) receiver: mpsc::Receiver<String>,
+    pub(crate) sender: mpsc::Sender<PlayState>,
+    pub(crate) receiver: mpsc::Receiver<Trigger>,
 }
 
 impl SocketHandler {
-    fn new(sender: mpsc::Sender<String>, receiver: mpsc::Receiver<String>) -> Self {
+    fn new(sender: mpsc::Sender<PlayState>, receiver: mpsc::Receiver<Trigger>) -> Self {
         Self { sender, receiver }
     }
 }
@@ -137,15 +117,24 @@ async fn start_socket(url: &str, name: &str, socket_handler: SocketHandler) -> B
 
 async fn read_from_socket(
     mut read: SplitStream<WebSocketStream<MaybeTlsStream<TcpStream>>>,
-    sender: mpsc::Sender<String>,
+    sender: mpsc::Sender<PlayState>,
 ) {
     while let Some(Ok(message)) = read.next().await {
         match message {
-            Message::Text(message) => {
-                #[cfg(feature = "enable-tracing")]
-                trace!("Received text message: {}", message);
+            Message::Binary(message) => {
+                let play_state: PlayState = match serde_json::from_slice(&message) {
+                    Ok(state) => state,
+                    Err(error) => {
+                        #[cfg(feature = "enable-tracing")]
+                        error!("Failed to deserialize message: {error}");
+                        continue;
+                    }
+                };
 
-                if let Err(error) = sender.send(message.to_string()).await {
+                #[cfg(feature = "enable-tracing")]
+                trace!("Received binary message: {:?}", play_state);
+
+                if let Err(error) = sender.send(play_state).await {
                     #[cfg(feature = "enable-tracing")]
                     error!("Failed to send message to channel: {error}");
                 }
@@ -164,13 +153,22 @@ async fn read_from_socket(
 
 async fn write_to_socket(
     mut write: SplitSink<WebSocketStream<MaybeTlsStream<TcpStream>>, Message>,
-    mut receiver: mpsc::Receiver<String>,
+    mut receiver: mpsc::Receiver<Trigger>,
 ) {
-    while let Some(message) = receiver.recv().await {
+    while let Some(trigger) = receiver.recv().await {
         #[cfg(feature = "enable-tracing")]
-        trace!("Sending message to WebSocket: {}", message);
+        trace!("Sending trigger to WebSocket: {:?}", trigger);
 
-        if let Err(error) = write.send(Message::Text(message.into())).await {
+        let message = match serde_json::to_vec(&trigger) {
+            Ok(bytes) => bytes,
+            Err(error) => {
+                #[cfg(feature = "enable-tracing")]
+                error!("Failed to serialize trigger: {:?}", error);
+                continue;
+            }
+        };
+
+        if let Err(error) = write.send(Message::Binary(message.into())).await {
             #[cfg(feature = "enable-tracing")]
             error!("Failed to send message over WebSocket: {error}");
         }
