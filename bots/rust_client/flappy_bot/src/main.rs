@@ -4,7 +4,9 @@ use tracing::subscriber;
 use tracing_subscriber::filter::LevelFilter;
 use tracing_subscriber::FmtSubscriber;
 
-struct MyFlappyConsumer;
+struct MyFlappyConsumer {
+    fly: bool
+}
 
 #[async_trait]
 impl FlappyConsumer for MyFlappyConsumer {
@@ -13,10 +15,13 @@ impl FlappyConsumer for MyFlappyConsumer {
         tracing::debug!("{:?}", play_state);
 
         // Determine if the player should fly based on their position
-        let fly = matches!(play_state.player.pos_y, 450.0..=f32::INFINITY)
-            || play_state.player.pos_y < 50.0;
+        if play_state.player.pos_y > 450.0 {
+            self.fly = true;
+        } else if play_state.player.pos_y < 50.0 {
+            self.fly = false;
+        }
 
-        Trigger { fly } // Return the Trigger message back out to the server
+        Trigger { fly: self.fly } // Return the Trigger message back out to the server
     }
 }
 
@@ -31,7 +36,11 @@ async fn main() {
     let url = "wss://echo.websocket.org";
     let name = "Grouvie";
 
-    if let Err(error) = FlappyBot.start(url, name, MyFlappyConsumer).await {
+    let my_flappy_consumer = MyFlappyConsumer {
+        fly: false
+    };
+
+    if let Err(error) = FlappyBot.start(url, name, my_flappy_consumer).await {
         tracing::error!("{error}");
     };
 }
