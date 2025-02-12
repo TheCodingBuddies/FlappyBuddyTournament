@@ -1,4 +1,5 @@
 # FlappyBuddyTournament
+We start on the 24th of February. Then the game will be found here
 Be excited! The tournament starts soon...
 
 ### What's in right now?
