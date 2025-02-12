@@ -1,0 +1,24 @@
+[package]
+name = "flappy_lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait.workspace = true
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = ["macros", "rt-multi-thread", "sync"] }
+tokio-tungstenite = { workspace = true, features = ["native-tls"] }
+futures-util.workspace = true
+
+[dependencies.tracing]
+workspace = true
+optional = true
+
+[features]
+default = []
+enable-tracing = ["tracing"]
+
+[lints]
+workspace = true
