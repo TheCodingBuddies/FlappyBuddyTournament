@@ -1,0 +1,15 @@
+[package]
+name = "flappy_bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait.workspace = true
+tokio = { workspace = true, features = ["macros"] }
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+flappy_lib = { workspace = true, features = ["enable-tracing"] }
+
+[lints]
+workspace = true
