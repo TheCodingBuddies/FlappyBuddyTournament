@@ -2,6 +2,8 @@ plugins {
     id 'java'
 }
 
+apply plugin: 'application'
+
 group = 'cb'
 version = '1.0-SNAPSHOT'
 
@@ -17,9 +19,9 @@ dependencies {
     implementation 'org.slf4j:slf4j-nop:2.0.7'
 }
 
-//application {
-//    mainClass = 'cb.Main'
-//}
+application {
+    mainClass = 'cb.Main'
+}
 
 test {
     useJUnitPlatform()
