@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://x6xs2rljty4n"]
+
+[ext_resource type="Texture2D" uid="uid://befdku4wu8i6e" path="res://res/seagull.png" id="1_sufyh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ubaf"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b4vmo"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igsye"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uamqc"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmfvq"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gyqnt"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n5ye6"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_norw3"]
+atlas = ExtResource("1_sufyh")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5k2pa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ubaf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b4vmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igsye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uamqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmfvq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gyqnt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n5ye6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_norw3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_5k2pa")
+autoplay = "default"
+frame_progress = 0.287081

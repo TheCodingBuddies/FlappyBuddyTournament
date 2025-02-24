@@ -19,14 +19,18 @@ namespace CsClient.Bots
         [JsonPropertyName("rotation")]
         public float Rotation { get; set; }
 
+        [JsonPropertyName("state")]
+        public string State { get; set; }
+
         [JsonConstructor]
-        public Player(int height, int width, float posX, float posY, float rotation)
+        public Player(int height, int width, float posX, float posY, float rotation, string state)
         {
             Height = height;
             Width = width;
             PosX = posX;
             PosY = posY;
             Rotation = rotation;
+            State = state;
         }
     }
 }

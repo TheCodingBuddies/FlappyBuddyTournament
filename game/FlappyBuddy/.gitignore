@@ -1,0 +1,8 @@
+# Godot 4+ specific ignores
+.godot/
+*.png.import
+*.svg.import
+*.tmp
+saved_levels
+*.aseprite
+.idea

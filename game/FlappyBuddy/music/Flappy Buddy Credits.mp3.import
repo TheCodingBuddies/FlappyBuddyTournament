@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cm2f7twvom5qc"
+path="res://.godot/imported/Flappy Buddy Credits.mp3-b4a4d6e5e47609c147d573a40e9094a4.mp3str"
+
+[deps]
+
+source_file="res://music/Flappy Buddy Credits.mp3"
+dest_files=["res://.godot/imported/Flappy Buddy Credits.mp3-b4a4d6e5e47609c147d573a40e9094a4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

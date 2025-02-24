@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Level" load_steps=2 format=3 uid="uid://s0eytnq746vj"]
+
+[ext_resource type="Script" path="res://game/level.gd" id="1_b3g6w"]
+
+[resource]
+script = ExtResource("1_b3g6w")
+difficulty = 2
+time_in_sec = 65.0
+start_spawn_freq = 4.0
+max_spawn_freq = 0.8
+point_increase = 750
+freq_increase_rate = 0.2

@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0e40upyqu18q"]
+
+[ext_resource type="Script" path="res://game/game_over.gd" id="1_a3hbm"]
+[ext_resource type="Texture2D" uid="uid://drynfdqsjp1j1" path="res://res/background_new.png" id="1_fsex2"]
+[ext_resource type="Texture2D" uid="uid://gi87pf1qwg7n" path="res://res/GameOver.png" id="2_vkeii"]
+
+[node name="GameOver" type="CanvasLayer"]
+script = ExtResource("1_a3hbm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_fsex2")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOver" type="TextureRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -208.0
+offset_top = 40.0
+offset_right = 208.0
+offset_bottom = 300.0
+grow_horizontal = 2
+texture = ExtResource("2_vkeii")
+
+[node name="Control" type="Control" parent="Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -210.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = -29.0
+offset_right = 44.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Score" type="Label" parent="Control/Control/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 37
+text = "Score: 1337"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/Control/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="TryAgain" type="Button" parent="Control/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Try again"
+
+[node name="StartMenu" type="Button" parent="Control/Control/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Start Menu"
+
+[connection signal="pressed" from="Control/Control/VBoxContainer/HBoxContainer/TryAgain" to="." method="_on_try_again_pressed"]
+[connection signal="pressed" from="Control/Control/VBoxContainer/HBoxContainer/StartMenu" to="." method="_on_start_menu_pressed"]

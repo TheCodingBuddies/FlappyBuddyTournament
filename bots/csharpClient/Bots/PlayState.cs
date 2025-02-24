@@ -9,6 +9,9 @@ namespace CsClient.Bots
     {
         [JsonPropertyName("level_time")]
         public float LevelTime { get; set; }
+
+        [JsonPropertyName("score")]
+        public float Score { get; set; }
         
         [JsonPropertyName("player")]
         public Player Player { get; set; }
@@ -20,9 +23,10 @@ namespace CsClient.Bots
         {
         }
 
-        public PlayState(float levelTime,Player player, List<Obstacle> obstacles)
+        public PlayState(float levelTime, float score, Player player, List<Obstacle> obstacles)
         {
             LevelTime = levelTime;
+            Score = score;
             Player = player;
             Obstacles = obstacles;
         }

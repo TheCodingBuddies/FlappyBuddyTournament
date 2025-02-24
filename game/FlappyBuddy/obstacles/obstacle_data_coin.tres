@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ObstacleData" load_steps=6 format=3 uid="uid://bkku1jl1yqxo"]
+
+[ext_resource type="PackedScene" uid="uid://ci0fadoy4o3hk" path="res://obstacles/coin_animation.tscn" id="1_emolt"]
+[ext_resource type="Script" path="res://obstacles/obstacle_data.gd" id="1_nfm1m"]
+[ext_resource type="Script" path="res://obstacles/coin_bahaviour.gd" id="2_nfnra"]
+
+[sub_resource type="Resource" id="Resource_t7ebg"]
+script = ExtResource("2_nfnra")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_435ln"]
+radius = 14.0
+
+[resource]
+script = ExtResource("1_nfm1m")
+obstacle_name = "Coin"
+points = 120
+animation = ExtResource("1_emolt")
+collision = SubResource("CircleShape2D_435ln")
+behaviour = SubResource("Resource_t7ebg")
+speed = 180

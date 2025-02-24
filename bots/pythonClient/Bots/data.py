@@ -12,10 +12,11 @@ class Player:
     pos_x: float
     pos_y: float
     rotation: float
+    state: str
 
     @staticmethod
     def from_dict(data) -> Player:
-        return Player(data['height'], data['width'], data['pos_x'], data['pos_y'], data['rotation'])
+        return Player(data['height'], data['width'], data['pos_x'], data['pos_y'], data['rotation'], data['state'])
 
 
 @dataclass
@@ -25,10 +26,12 @@ class Obstacle:
     origin_y: float
     height: int
     width: int
+    close_area_height: int
+    close_area_width: int
 
     @staticmethod
     def from_dict(data) -> Obstacle:
-        return Obstacle(data["type"], data["origin_x"], data["origin_y"], data["height"], data["width"])
+        return Obstacle(data["type"], data["origin_x"], data["origin_y"], data["height"], data["width"], data["close_area_height"], data['close_area_width'])
 
 
 class FromServerPacket(ABC):
@@ -41,11 +44,11 @@ class FromServerPacket(ABC):
 @dataclass
 class PlayState(FromServerPacket):
     level_time: float
+    score: float
     player: Player
     obstacles: List[Obstacle]
 
     @staticmethod
     def from_dict(data: dict) -> PlayState:
-        ref_ticks = data["level_time"]
         obstacles = [Obstacle.from_dict(entry) for entry in data['obstacles']]
-        return PlayState(ref_ticks, Player.from_dict(data["player"]), obstacles)
+        return PlayState(data["level_time"], data['score'], Player.from_dict(data["player"]), obstacles)

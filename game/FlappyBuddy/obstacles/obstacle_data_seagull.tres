@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="ObstacleData" load_steps=8 format=3 uid="uid://ctrrqqpl2numk"]
+
+[ext_resource type="PackedScene" uid="uid://x6xs2rljty4n" path="res://obstacles/seagull_animation.tscn" id="1_12xe2"]
+[ext_resource type="Script" path="res://obstacles/obstacle_data.gd" id="1_soufh"]
+[ext_resource type="Script" path="res://obstacles/seagull_behaviour.gd" id="2_3k1e3"]
+[ext_resource type="AudioStream" uid="uid://d11cnlrmcyv1f" path="res://sounds/gull_spawn.wav" id="3_vgud7"]
+
+[sub_resource type="Resource" id="Resource_mn47v"]
+script = ExtResource("2_3k1e3")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vu31y"]
+size = Vector2(104, 82)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3gxk"]
+size = Vector2(59, 22)
+
+[resource]
+script = ExtResource("1_soufh")
+obstacle_name = "Seagull"
+points = 240
+animation = ExtResource("1_12xe2")
+collision = SubResource("RectangleShape2D_k3gxk")
+closeArea = SubResource("RectangleShape2D_vu31y")
+behaviour = SubResource("Resource_mn47v")
+entry_sound = ExtResource("3_vgud7")
+speed = 300

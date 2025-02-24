@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="EntrySounds" load_steps=2 format=3 uid="uid://5a5ioe4r1laf"]
+
+[ext_resource type="Script" path="res://player/entry_sound.gd" id="1_b8c7n"]
+
+[resource]
+script = ExtResource("1_b8c7n")
+test = 0

@@ -33,8 +33,8 @@ async fn main() {
 
     subscriber::set_global_default(subscriber).expect("setting default subscriber failed");
 
-    let url = "wss://echo.websocket.org";
-    let name = "Grouvie";
+    let url = "ws://localhost:5050";
+    let name = "RustTestBot";
 
     let my_flappy_consumer = MyFlappyConsumer {
         fly: false

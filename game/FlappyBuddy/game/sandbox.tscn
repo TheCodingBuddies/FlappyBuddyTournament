@@ -1,0 +1,167 @@
+[gd_scene load_steps=13 format=3 uid="uid://cxrfmsgr1xvjh"]
+
+[ext_resource type="Script" path="res://game/sandbox.gd" id="1_n43l8"]
+[ext_resource type="Texture2D" uid="uid://befdku4wu8i6e" path="res://res/seagull.png" id="2_r2e27"]
+[ext_resource type="Texture2D" uid="uid://ckj4887oe3l5b" path="res://res/badboy_bird.png" id="3_joh4n"]
+[ext_resource type="Texture2D" uid="uid://ew4xk0wlrm5g" path="res://res/coins.png" id="4_fndxf"]
+[ext_resource type="Texture2D" uid="uid://oqojx2v5aih3" path="res://res/finish.png" id="5_7gbf6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ts8vg"]
+atlas = ExtResource("2_r2e27")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g5qlt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ts8vg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xk78d"]
+atlas = ExtResource("3_joh4n")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f1tsy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xk78d")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5wof"]
+atlas = ExtResource("4_fndxf")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dole1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5wof")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qpun8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_7gbf6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Sandbox" type="Node"]
+process_mode = 3
+script = ExtResource("1_n43l8")
+
+[node name="SandboxControl" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="CheckBox" type="CheckBox" parent="SandboxControl"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 493.0
+offset_top = 4.0
+offset_right = 587.0
+offset_bottom = 35.0
+text = "Shift right"
+
+[node name="SanboxButtons" type="HBoxContainer" parent="SandboxControl"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -99.5
+offset_right = 99.5
+offset_bottom = 42.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 18
+
+[node name="ControlSeagull" type="Control" parent="SandboxControl/SanboxButtons"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="UseSeagull" type="Button" parent="SandboxControl/SanboxButtons/ControlSeagull"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 45.0
+offset_bottom = 39.0
+
+[node name="seagull" type="AnimatedSprite2D" parent="SandboxControl/SanboxButtons/ControlSeagull"]
+texture_filter = 1
+position = Vector2(23, 19)
+scale = Vector2(1.07031, 1.07031)
+sprite_frames = SubResource("SpriteFrames_g5qlt")
+
+[node name="ControlRaven" type="Control" parent="SandboxControl/SanboxButtons"]
+layout_mode = 2
+
+[node name="UseRaven" type="Button" parent="SandboxControl/SanboxButtons/ControlRaven"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 32.0
+offset_right = 77.0
+offset_bottom = 39.0
+
+[node name="raven" type="AnimatedSprite2D" parent="SandboxControl/SanboxButtons/ControlRaven"]
+texture_filter = 1
+position = Vector2(55, 19)
+scale = Vector2(0.503906, 0.503906)
+sprite_frames = SubResource("SpriteFrames_f1tsy")
+
+[node name="ControlCoin" type="Control" parent="SandboxControl/SanboxButtons"]
+layout_mode = 2
+
+[node name="UseCoin" type="Button" parent="SandboxControl/SanboxButtons/ControlCoin"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 64.0
+offset_right = 109.0
+offset_bottom = 39.0
+
+[node name="coin" type="AnimatedSprite2D" parent="SandboxControl/SanboxButtons/ControlCoin"]
+texture_filter = 1
+position = Vector2(87.5, 19)
+scale = Vector2(1.5293, 1.5293)
+sprite_frames = SubResource("SpriteFrames_dole1")
+
+[node name="ControlFinish" type="Control" parent="SandboxControl/SanboxButtons"]
+layout_mode = 2
+
+[node name="UseFinish" type="Button" parent="SandboxControl/SanboxButtons/ControlFinish"]
+layout_mode = 0
+offset_left = 96.0
+offset_right = 141.0
+offset_bottom = 39.0
+
+[node name="coin" type="AnimatedSprite2D" parent="SandboxControl/SanboxButtons/ControlFinish"]
+texture_filter = 1
+position = Vector2(119, 19)
+scale = Vector2(11.0073, 11.0073)
+sprite_frames = SubResource("SpriteFrames_qpun8")
+
+[connection signal="pressed" from="SandboxControl/SanboxButtons/ControlSeagull/UseSeagull" to="." method="_on_use_seagull_pressed"]
+[connection signal="pressed" from="SandboxControl/SanboxButtons/ControlRaven/UseRaven" to="." method="_on_use_raven_pressed"]
+[connection signal="pressed" from="SandboxControl/SanboxButtons/ControlCoin/UseCoin" to="." method="_on_use_coin_pressed"]
+[connection signal="pressed" from="SandboxControl/SanboxButtons/ControlFinish/UseFinish" to="." method="_on_use_finish_pressed"]

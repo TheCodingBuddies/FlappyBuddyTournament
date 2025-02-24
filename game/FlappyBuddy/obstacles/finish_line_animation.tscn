@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdc6fkb6lkad6"]
+
+[ext_resource type="Texture2D" uid="uid://oqojx2v5aih3" path="res://res/finish.png" id="1_hkf8x"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 1
+texture_repeat = 2
+scale = Vector2(16, 16)
+texture = ExtResource("1_hkf8x")
+region_enabled = true
+region_rect = Rect2(0, 0, 2, 32)

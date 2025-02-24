@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://cip0aw2038ywo"]
+
+[ext_resource type="Script" path="res://game/mute.gd" id="1_oj4rg"]
+
+[node name="MuteNode" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_oj4rg")
+
+[node name="Mute" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 1
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 60.0
+offset_bottom = 41.0
+text = "Sound: On"
+
+[connection signal="pressed" from="Mute" to="." method="_on_mute_pressed"]

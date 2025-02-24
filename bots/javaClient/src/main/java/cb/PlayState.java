@@ -10,6 +10,9 @@ public class PlayState {
     @JsonProperty("level_time")
     private float levelTime;
 
+    @JsonProperty("score")
+    private float score;
+
     @JsonProperty("player")
     private Player player;
 
@@ -25,6 +28,14 @@ public class PlayState {
 
     public void setLevelTime(float levelTime) {
         this.levelTime = levelTime;
+    }
+
+    public float getScore() {
+        return score;
+    }
+
+    public void setScore(float score) {
+        this.score = score;
     }
 
     public Player getPlayer() {

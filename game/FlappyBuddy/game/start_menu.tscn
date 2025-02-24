@@ -1,0 +1,561 @@
+[gd_scene load_steps=31 format=3 uid="uid://dt8xd41w1cwix"]
+
+[ext_resource type="Texture2D" uid="uid://drynfdqsjp1j1" path="res://res/background_new.png" id="1_jpchf"]
+[ext_resource type="Script" path="res://game/start_menu.gd" id="1_njv4j"]
+[ext_resource type="Texture2D" uid="uid://ccu3ktohfp8wr" path="res://res/Tino_fly.png" id="2_cscpj"]
+[ext_resource type="Texture2D" uid="uid://cdjcnu6ms38ep" path="res://res/fabi_fly.png" id="3_bbluf"]
+[ext_resource type="Texture2D" uid="uid://dpq4r6frulhl0" path="res://res/FlappyBuddy.png" id="3_vrqed"]
+[ext_resource type="ButtonGroup" uid="uid://ikj1xag2yg0b" path="res://game/player_selection_button_group.tres" id="4_77ri8"]
+[ext_resource type="AudioStream" uid="uid://bkuto31euxfvy" path="res://music/Flappy Buddy Start Menu.mp3" id="5_nwsc4"]
+[ext_resource type="ButtonGroup" uid="uid://0eqy8wq184dn" path="res://game/level_selection_button_group.tres" id="6_0qhfn"]
+[ext_resource type="PackedScene" uid="uid://cip0aw2038ywo" path="res://game/mute_node.tscn" id="8_wqjpe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4jh2s"]
+bg_color = Color(0.311304, 0.699658, 0.305663, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlshm"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwfwh"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2sopv"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r8lf7"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4v1nw"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1q8tt"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xeq57"]
+atlas = ExtResource("2_cscpj")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iyvwa"]
+resource_name = "start_tino"
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wlshm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwfwh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2sopv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r8lf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4v1nw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1q8tt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xeq57")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2ixm"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1y441"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7wkb"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x6aw6"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ym63y"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bd2ef"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wjhye"]
+atlas = ExtResource("3_bbluf")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nqnfd"]
+resource_name = "start_fabi"
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2ixm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1y441")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f7wkb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x6aw6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ym63y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bd2ef")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wjhye")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eisl5"]
+bg_color = Color(0.309804, 0.698039, 0.305882, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2djph"]
+bg_color = Color(0.309804, 0.698039, 0.305882, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s0csq"]
+bg_color = Color(0.309804, 0.698039, 0.305882, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cj630"]
+bg_color = Color(0.980392, 0.258824, 0.32549, 0.901961)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="StartMenu" type="CanvasLayer"]
+script = ExtResource("1_njv4j")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_jpchf")
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Control" type="Control" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureRect2" type="TextureRect" parent="BoxContainer/VBoxContainer2/Control"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -242.0
+offset_top = -80.0
+offset_right = -146.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(5, 5)
+size_flags_horizontal = 4
+texture = ExtResource("3_vrqed")
+stretch_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/separation = 60
+
+[node name="PlayerSelection" type="HBoxContainer" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 180
+alignment = 1
+
+[node name="TinoControl" type="Control" parent="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection"]
+layout_mode = 2
+
+[node name="TinoSelect" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/TinoControl"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4jh2s")
+toggle_mode = true
+button_pressed = true
+button_group = ExtResource("4_77ri8")
+
+[node name="Tino" type="AnimatedSprite2D" parent="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/TinoControl"]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_iyvwa")
+autoplay = "default"
+frame_progress = 0.0363497
+
+[node name="FabiControl" type="Control" parent="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection"]
+layout_mode = 2
+
+[node name="FabiSelect" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/FabiControl"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4jh2s")
+toggle_mode = true
+button_group = ExtResource("4_77ri8")
+
+[node name="Fabi" type="AnimatedSprite2D" parent="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/FabiControl"]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nqnfd")
+autoplay = "default"
+frame_progress = 0.747493
+flip_h = true
+
+[node name="DifficultySelection" type="HBoxContainer" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="easy" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eisl5")
+toggle_mode = true
+button_pressed = true
+button_group = ExtResource("6_0qhfn")
+text = "Easy"
+
+[node name="medium" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2djph")
+toggle_mode = true
+button_group = ExtResource("6_0qhfn")
+text = "Medium"
+
+[node name="hard" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s0csq")
+toggle_mode = true
+button_group = ExtResource("6_0qhfn")
+text = "Hard"
+
+[node name="sandbox" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s0csq")
+toggle_mode = true
+button_group = ExtResource("6_0qhfn")
+text = "Sandbox"
+
+[node name="custom" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection"]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 25
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s0csq")
+toggle_mode = true
+button_group = ExtResource("6_0qhfn")
+text = "Custom"
+
+[node name="Start" type="HBoxContainer" parent="BoxContainer/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="StartButton" type="Button" parent="BoxContainer/VBoxContainer2/VBoxContainer/Start"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Start Game"
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -151.0
+offset_top = -88.0
+offset_right = -9.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -51.5
+offset_right = 51.5
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Record Level:"
+
+[node name="RecordLevel" type="CheckButton" parent="Panel"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -23.0
+offset_top = -61.0
+offset_right = 21.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="LevelName" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 39.0
+offset_right = 139.0
+offset_bottom = 74.0
+
+[node name="HumanOrBot" type="MarginContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -143.0
+offset_right = 35.0
+offset_bottom = 65.0
+grow_horizontal = 0
+scale = Vector2(0.8, 0.8)
+size_flags_horizontal = 4
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HumanOrBot"]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HumanOrBot/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="human" type="Label" parent="HumanOrBot/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "human"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="PlayMode" type="CheckButton" parent="HumanOrBot/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="bot" type="Label" parent="HumanOrBot/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "bot"
+vertical_alignment = 1
+
+[node name="BotName" type="Label" parent="HumanOrBot/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "waiting for connection..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MuteNode" parent="." instance=ExtResource("8_wqjpe")]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nwsc4")
+volume_db = -18.615
+autoplay = true
+parameters/looping = true
+
+[node name="LevelSelection" type="Panel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -243.5
+offset_top = -152.5
+offset_right = 243.5
+offset_bottom = 152.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cj630")
+
+[node name="LevelSelectionCancel" type="Button" parent="LevelSelection"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 251.0
+offset_right = 195.0
+offset_bottom = 285.0
+text = "Cancel"
+
+[node name="LevelList" type="ItemList" parent="LevelSelection"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -208.0
+offset_top = 10.5
+offset_right = 210.0
+offset_bottom = 234.5
+grow_horizontal = 2
+
+[node name="LevelSelectionButton" type="Button" parent="LevelSelection"]
+layout_mode = 0
+offset_left = 297.5
+offset_top = 249.5
+offset_right = 414.5
+offset_bottom = 284.5
+text = "Select"
+
+[node name="Repeat" type="Panel" parent="."]
+offset_left = 284.0
+offset_top = 399.0
+offset_right = 480.0
+offset_bottom = 430.0
+
+[node name="LevelRepeat" type="SpinBox" parent="Repeat"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 83.0625
+offset_bottom = 31.0
+min_value = 1.0
+max_value = 999999.0
+value = 1.0
+
+[node name="Label" type="Label" parent="Repeat"]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 3.0
+offset_right = 188.0
+offset_bottom = 26.0
+text = "repeat level"
+
+[node name="port" type="SpinBox" parent="."]
+unique_name_in_owner = true
+offset_left = 705.0
+offset_top = 48.0
+offset_right = 788.063
+offset_bottom = 79.0
+scale = Vector2(0.5, 0.5)
+min_value = 5050.0
+max_value = 9000.0
+value = 5050.0
+
+[node name="PortLabel" type="Label" parent="."]
+offset_left = 642.0
+offset_top = 48.0
+offset_right = 704.0
+offset_bottom = 71.0
+theme_override_font_sizes/font_size = 11
+text = "...on port:"
+
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/TinoControl/TinoSelect" to="." method="_on_tino_select_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/FabiControl/FabiSelect" to="." method="_on_fabi_select_pressed"]
+[connection signal="toggled" from="BoxContainer/VBoxContainer2/VBoxContainer/PlayerSelection/FabiControl/FabiSelect" to="." method="_on_fabi_select_toggled"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection/easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection/medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection/hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection/sandbox" to="." method="_on_sandbox_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/DifficultySelection/custom" to="." method="_on_custom_pressed"]
+[connection signal="pressed" from="BoxContainer/VBoxContainer2/VBoxContainer/Start/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="toggled" from="Panel/RecordLevel" to="." method="_on_record_level_toggled"]
+[connection signal="text_changed" from="Panel/LevelName" to="." method="_on_level_name_text_changed"]
+[connection signal="toggled" from="HumanOrBot/VBoxContainer/HBoxContainer/PlayMode" to="." method="_on_play_mode_toggled"]
+[connection signal="pressed" from="LevelSelection/LevelSelectionCancel" to="." method="_on_level_selection_cancel_pressed"]
+[connection signal="item_selected" from="LevelSelection/LevelList" to="." method="_on_level_list_item_selected"]
+[connection signal="pressed" from="LevelSelection/LevelSelectionButton" to="." method="_on_level_selection_button_pressed"]
+[connection signal="value_changed" from="Repeat/LevelRepeat" to="." method="_on_spin_box_value_changed"]
+[connection signal="value_changed" from="port" to="." method="_on_port_value_changed"]

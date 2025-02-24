@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://bavqg71kjj8cu"]
+
+[ext_resource type="Script" path="res://obstacles/obstacle.gd" id="1_4g1q8"]
+[ext_resource type="Resource" uid="uid://bkku1jl1yqxo" path="res://obstacles/obstacle_data_coin.tres" id="2_g1ae1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bd872"]
+
+[node name="Obstacle" type="Node2D"]
+script = ExtResource("1_4g1q8")
+obstacle_data = ExtResource("2_g1ae1")
+
+[node name="CollisionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="CollisionArea"]
+shape = SubResource("RectangleShape2D_bd872")
+
+[node name="CloseEnoughArea" type="Area2D" parent="."]
+
+[node name="CloseShape" type="CollisionShape2D" parent="CloseEnoughArea"]
+shape = SubResource("RectangleShape2D_bd872")
+
+[node name="EntrySound" type="AudioStreamPlayer" parent="."]
+volume_db = -5.0
+max_polyphony = 20
+
+[connection signal="body_entered" from="CollisionArea" to="." method="_on_collision_area_body_entered"]
+[connection signal="body_entered" from="CloseEnoughArea" to="." method="_on_close_enough_area_body_entered"]

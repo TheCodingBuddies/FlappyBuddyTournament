@@ -1,0 +1,214 @@
+[gd_scene load_steps=15 format=3 uid="uid://clucwtdo3ajal"]
+
+[ext_resource type="Script" path="res://game/game.gd" id="1_mueix"]
+[ext_resource type="PackedScene" uid="uid://brmv2rffny2ko" path="res://game/static_background.tscn" id="1_q1sf5"]
+[ext_resource type="Script" path="res://game/score.gd" id="4_uyu4a"]
+[ext_resource type="PackedScene" uid="uid://0sk3bimbhdx4" path="res://game/dynamic_background.tscn" id="7_y0k54"]
+[ext_resource type="PackedScene" uid="uid://caopjqsotb7ox" path="res://player/player.tscn" id="8_hbq2f"]
+[ext_resource type="Texture2D" uid="uid://bp6pudecvqabm" path="res://res/coin.png" id="9_en4n1"]
+[ext_resource type="Script" path="res://game/obstacle_hover.gd" id="10_2sppw"]
+[ext_resource type="Script" path="res://game/pause.gd" id="10_ptocp"]
+[ext_resource type="Texture2D" uid="uid://bmn1q26c4vwnn" path="res://res/pause.png" id="11_e62ui"]
+[ext_resource type="AudioStream" uid="uid://b2g2vvrkske2t" path="res://music/Flappy Buddy Ingame.mp3" id="14_73lvk"]
+[ext_resource type="PackedScene" uid="uid://cip0aw2038ywo" path="res://game/mute_node.tscn" id="14_cxbkr"]
+
+[sub_resource type="Shader" id="Shader_jjx51"]
+code = "shader_type canvas_item;
+uniform float scroll_speed = 3;
+
+
+void vertex() {
+	// Called for every vertex the material is visible on.
+}
+
+void fragment() {
+	vec2 u = UV;
+	u.x += scroll_speed * TIME;
+	vec4 col = texture(TEXTURE, u);
+	COLOR = col;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0gp73"]
+resource_local_to_scene = true
+shader = SubResource("Shader_jjx51")
+shader_parameter/scroll_speed = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ve6u"]
+draw_center = false
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0.95577, 0.468362, 1)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_mueix")
+
+[node name="static_background" parent="." instance=ExtResource("1_q1sf5")]
+material = SubResource("ShaderMaterial_0gp73")
+
+[node name="dynamic_background" parent="." instance=ExtResource("7_y0k54")]
+
+[node name="Player" parent="." instance=ExtResource("8_hbq2f")]
+position = Vector2(-50, 250)
+scale = Vector2(2.13, 2.13)
+
+[node name="Range_Debug" type="Panel" parent="."]
+theme_override_styles/panel = SubResource("StyleBoxFlat_6ve6u")
+
+[node name="Countdown" type="Node" parent="."]
+
+[node name="Time" type="Label" parent="Countdown"]
+unique_name_in_owner = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 400
+text = "3"
+
+[node name="ScorePanel" type="Panel" parent="."]
+top_level = true
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -128.0
+offset_top = 9.0
+offset_right = -7.0
+offset_bottom = 36.0
+grow_horizontal = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScorePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = 1.0
+offset_right = -10.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Score" type="Label" parent="ScorePanel/VBoxContainer"]
+layout_mode = 2
+text = "Score: 0"
+script = ExtResource("4_uyu4a")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_73lvk")
+volume_db = -24.764
+autoplay = true
+
+[node name="SpeedLabel" type="Label" parent="."]
+offset_left = 734.0
+offset_top = 475.0
+offset_right = 774.0
+offset_bottom = 498.0
+text = "1.0"
+
+[node name="Speed" type="HSlider" parent="."]
+offset_left = 606.0
+offset_top = 479.0
+offset_right = 726.0
+offset_bottom = 495.0
+max_value = 1.5
+step = 0.1
+value = 1.0
+
+[node name="MuteNode" parent="." instance=ExtResource("14_cxbkr")]
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+one_shot = true
+
+[node name="FlyerName" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 7.0
+offset_top = 485.0
+offset_right = 64.0
+offset_bottom = 508.0
+text = "Human"
+
+[node name="TriesLeft" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 8.0
+offset_top = 467.0
+offset_right = 56.0
+offset_bottom = 490.0
+text = "1x left"
+
+[node name="ObstacleHover" type="TextureRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.501961)
+offset_right = 16.0
+offset_bottom = 16.0
+texture = ExtResource("9_en4n1")
+script = ExtResource("10_2sppw")
+
+[node name="Pause" type="Node" parent="."]
+script = ExtResource("10_ptocp")
+
+[node name="PausePanel" type="Panel" parent="Pause"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Pause/PausePanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_top = 72.0
+offset_right = 240.0
+offset_bottom = 181.0
+grow_horizontal = 2
+texture = ExtResource("11_e62ui")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause/PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -142.0
+offset_top = -2.0
+offset_right = 142.0
+offset_bottom = 171.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="Continue" type="Button" parent="Pause/PausePanel/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Continue"
+
+[node name="Exit" type="Button" parent="Pause/PausePanel/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Exit
+"
+
+[connection signal="value_changed" from="Speed" to="." method="_on_speed_value_changed"]
+[connection signal="pressed" from="Pause/PausePanel/VBoxContainer/Continue" to="Pause" method="_on_continue_pressed"]
+[connection signal="pressed" from="Pause/PausePanel/VBoxContainer/Exit" to="Pause" method="_on_exit_pressed"]

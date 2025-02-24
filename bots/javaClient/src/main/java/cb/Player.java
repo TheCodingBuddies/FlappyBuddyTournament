@@ -11,18 +11,21 @@ public class Player {
     private float posX;
     private float posY;
     private float rotation;
+    private String state;
 
     @JsonCreator
     public Player(@JsonProperty("height") int height,
                   @JsonProperty("width") int width,
                   @JsonProperty("pos_x") float posX,
                   @JsonProperty("pos_y") float posY,
-                  @JsonProperty("rotation") float rotation) {
+                  @JsonProperty("rotation") float rotation,
+                  @JsonProperty("state") String state) {
         this.height = height;
         this.width = width;
         this.posX = posX;
         this.posY = posY;
         this.rotation = rotation;
+        this.state = state;
     }
 
     public int getHeight() {
@@ -45,6 +48,10 @@ public class Player {
         return rotation;
     }
 
+    public String getState() {
+        return state;
+    }
+
     public void setHeight(int height) {
         this.height = height;
     }
@@ -63,5 +70,9 @@ public class Player {
 
     public void setRotation(float rotation) {
         this.rotation = rotation;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 }
