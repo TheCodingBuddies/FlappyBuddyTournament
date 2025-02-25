@@ -5,10 +5,10 @@
 [ext_resource type="Script" path="res://game/score.gd" id="4_uyu4a"]
 [ext_resource type="PackedScene" uid="uid://0sk3bimbhdx4" path="res://game/dynamic_background.tscn" id="7_y0k54"]
 [ext_resource type="PackedScene" uid="uid://caopjqsotb7ox" path="res://player/player.tscn" id="8_hbq2f"]
-[ext_resource type="Texture2D" uid="uid://bp6pudecvqabm" path="res://res/coin.png" id="9_en4n1"]
+[ext_resource type="Texture2D" uid="uid://b7br1cp7sfgw8" path="res://res/coin.png" id="9_en4n1"]
 [ext_resource type="Script" path="res://game/obstacle_hover.gd" id="10_2sppw"]
 [ext_resource type="Script" path="res://game/pause.gd" id="10_ptocp"]
-[ext_resource type="Texture2D" uid="uid://bmn1q26c4vwnn" path="res://res/pause.png" id="11_e62ui"]
+[ext_resource type="Texture2D" uid="uid://kkadqgpcmpoj" path="res://res/pause.png" id="11_e62ui"]
 [ext_resource type="AudioStream" uid="uid://b2g2vvrkske2t" path="res://music/Flappy Buddy Ingame.mp3" id="14_73lvk"]
 [ext_resource type="PackedScene" uid="uid://cip0aw2038ywo" path="res://game/mute_node.tscn" id="14_cxbkr"]
 
@@ -29,7 +29,7 @@ void fragment() {
 }
 "
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_0gp73"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ekhas"]
 resource_local_to_scene = true
 shader = SubResource("Shader_jjx51")
 shader_parameter/scroll_speed = 3.0
@@ -46,7 +46,7 @@ border_color = Color(0, 0.95577, 0.468362, 1)
 script = ExtResource("1_mueix")
 
 [node name="static_background" parent="." instance=ExtResource("1_q1sf5")]
-material = SubResource("ShaderMaterial_0gp73")
+material = SubResource("ShaderMaterial_ekhas")
 
 [node name="dynamic_background" parent="." instance=ExtResource("7_y0k54")]
 

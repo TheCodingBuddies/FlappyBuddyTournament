@@ -6,18 +6,39 @@ extends CanvasLayer
 @onready var level_list = $LevelSelection/LevelList
 @onready var port: SpinBox = %port
 @onready var level_repeat: SpinBox = %LevelRepeat
+@onready var easy: Button = %easy
+@onready var medium: Button = %medium
+@onready var hard: Button = %hard
+@onready var sandbox: Button = %sandbox
+@onready var custom: Button = %custom
+
 
 var player_animation: String
 var level_difficulty: GameManager.LevelDifficulty
 
 func _ready():
 	level_selection.visible = false
-	level_difficulty = GameManager.LevelDifficulty.EASY
+	level_difficulty = GameManager.difficulty
+	set_difficulty(level_difficulty)
 	player_animation = "tino_animation"
 	port.set_block_signals(true)
 	port.value = WebsocketServer.port
 	port.set_block_signals(false)
+	play_mode.button_pressed = GameManager._is_bot
 	level_repeat.value = GameManager.repeat_max
+
+func set_difficulty(value):
+	match value:
+		GameManager.LevelDifficulty.EASY:
+			easy.button_pressed = true
+		GameManager.LevelDifficulty.MEDIUM:
+			medium.button_pressed = true
+		GameManager.LevelDifficulty.HARD:
+			hard.button_pressed = true
+		GameManager.LevelDifficulty.SANDBOX:
+			sandbox.button_pressed = true
+		GameManager.LevelDifficulty.CUSTOM:
+			custom.button_pressed = true
 
 func _physics_process(_delta: float) -> void:
 	bot_name.set_text(WebsocketServer.connected_bot_name)

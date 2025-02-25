@@ -137,7 +137,6 @@ func reset_game():
 	Engine.time_scale = 1
 	SoundManager.stop_all()
 	SoundManager.set_playback_speed(1)
-	_is_bot = false
 
 func reset_level() -> void:
 	last_score = score_value

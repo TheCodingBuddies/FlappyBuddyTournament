@@ -3,6 +3,5 @@
 *.png.import
 *.svg.import
 *.tmp
-saved_levels
 *.aseprite
 .idea
