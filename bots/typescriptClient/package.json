@@ -1,0 +1,20 @@
+{
+  "name": "flappy-buddy-typescript-client",
+  "version": "1.0.0",
+  "description": "TypeScript client for Flappy Buddy Tournament",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+} 
