@@ -1,9 +1,9 @@
 [gd_scene load_steps=41 format=3 uid="uid://caopjqsotb7ox"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_grv8t"]
-[ext_resource type="Texture2D" uid="uid://dbbguouxwh5o0" path="res://res/fabi_fly.png" id="1_prio7"]
+[ext_resource type="Texture2D" uid="uid://drynhyxuvtt46" path="res://res/fabi_fly.png" id="1_prio7"]
 [ext_resource type="Script" path="res://player/entry_sound.gd" id="2_b3ykm"]
-[ext_resource type="Texture2D" uid="uid://nmbr6dkmk04r" path="res://res/Tino_fly.png" id="3_7ojks"]
+[ext_resource type="Texture2D" uid="uid://h1mdapgntgvq" path="res://res/Tino_fly.png" id="3_7ojks"]
 [ext_resource type="AudioStream" uid="uid://d0rit3v7o8cw4" path="res://sounds/fabi_piept.wav" id="3_b2x86"]
 [ext_resource type="AudioStream" uid="uid://dvx3jxv3odtax" path="res://sounds/airplane_engine.wav" id="4_21qjb"]
 [ext_resource type="AudioStream" uid="uid://c331j0auv6d27" path="res://sounds/tino_frueherVogel.wav" id="4_etieq"]
@@ -178,7 +178,6 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_8871p")
 animation = &"fabi_animation"
 autoplay = "fabi_animation"
-frame_progress = 0.172827
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 unique_name_in_owner = true

@@ -46,8 +46,8 @@ func update_state(player, obstacles):
 		"rotation": player.rotation,
 		"pos_x": player.position.x,
 		"pos_y": player.position.y,
-		"width": player_size.x,
-		"height": player_size.y,
+		"width": player_size.x * player.scale[0],
+		"height": player_size.y * player.scale[1],
 		"state": player.state,
 	}
 	var all = {
@@ -59,13 +59,13 @@ func update_state(player, obstacles):
 	for obstacle in obstacles:
 		var obstacle_size = obstacle._get_collision_rect().size
 		var close_area = obstacle._get_close_area().size
-		var collision_origin = Vector2(obstacle.position.x - obstacle_size.x/2, obstacle.position.y - obstacle_size.y/2)
+		var collision_origin = Vector2(obstacle.position.x, obstacle.position.y)
 		var data = {
 			"type": obstacle._get_name_as_string(),
 			"origin_x": collision_origin.x,
 			"origin_y": collision_origin.y,
-			"width": obstacle_size.x,
-			"height":  obstacle_size.y,
+			"width": obstacle_size.x * obstacle.scale[0],
+			"height":  obstacle_size.y * obstacle.scale[1],
 			"close_area_width": close_area.x,
 			"close_area_height": close_area.y,
 		}
