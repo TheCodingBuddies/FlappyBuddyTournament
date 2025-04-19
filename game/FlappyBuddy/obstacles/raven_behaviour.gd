@@ -18,9 +18,9 @@ func _on_player_collide(raven: Obstacle, player: Player):
 func _move(delta: float, raven: Obstacle):
 	var amp = 50.0
 	var freq = 2.0
-	var y_offset = (sin(iterate * freq) * amp) - amp/2.0
+	var y_offset = sin(iterate * freq) * amp
 	#raven.rotate(y_offset/50000 * Engine.time_scale)
-	raven.position.y = (start_y_position + y_offset)
+	raven.position.y = start_y_position + y_offset
 	
 	iterate += delta
 	if raven.position.x < -50:
