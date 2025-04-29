@@ -6,13 +6,14 @@ class_name Obstacle
 @onready var close_shape: CollisionShape2D = $CloseEnoughArea/CloseShape
 @onready var entry_sound: AudioStreamPlayer = $EntrySound
 @export var obstacle_data: ObstacleData
+var animation_instance: Node = null
 
 func _ready():
 	obstacle_data = obstacle_data.duplicate(true)
 	collision_shape.shape = obstacle_data.collision
 	close_shape.shape = obstacle_data.closeArea
-	var animation = obstacle_data.animation.instantiate()
-	add_child(animation)
+	animation_instance = obstacle_data.animation.instantiate()
+	add_child(animation_instance)
 	entry_sound.stream = obstacle_data.entry_sound
 	obstacle_data.behaviour._entry(self)
 

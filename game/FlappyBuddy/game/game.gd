@@ -25,6 +25,7 @@ const OBSTACLE_DATA_COIN = preload("res://obstacles/obstacle_data_coin.tres")
 const OBSTACLE_DATA_SEAGULL = preload("res://obstacles/obstacle_data_seagull.tres")
 const OBSTACLE_DATA_RAVEN = preload("res://obstacles/obstacle_data_raven.tres")
 const OBSTACLE_DATA_FINISH_LINE = preload("res://obstacles/obstacle_data_finish_line.tres")
+const OBSTACLE_DATA_VAMPIRE_COW = preload("res://obstacles/obstacle_data_vampire_cow.tres")
 
 enum ObstacleType {
 	SEAGULL,
@@ -149,6 +150,8 @@ func spawn_from_file() -> void:
 				spawn(OBSTACLE_DATA_SEAGULL, pos)
 			"Finish":
 				spawn(OBSTACLE_DATA_FINISH_LINE, pos)
+			"VampireCow":
+				spawn(OBSTACLE_DATA_VAMPIRE_COW, pos)
 
 func process_game(delta) -> void:
 	if GameManager.is_custom():
@@ -186,8 +189,10 @@ func _physics_process(delta) -> void:
 		update_game_state()
 	GameManager.increase_level_time(delta)
 
-func spawn(obstacle_data: ObstacleData, position: Vector2) -> void:
-	var new_obstacle =  OBSTACLE.instantiate()
+func spawn(obstacle_data: ObstacleData, position: Vector2, speed_y: int = 0) -> void:
+	var new_obstacle = OBSTACLE.instantiate()
+	if speed_y != 0:
+		obstacle_data.speed_y = speed_y
 	new_obstacle.obstacle_data = obstacle_data
 	new_obstacle.position = position
 	GameManager.add_obstacle_data(new_obstacle)

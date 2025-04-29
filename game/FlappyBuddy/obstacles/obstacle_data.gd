@@ -10,3 +10,4 @@ class_name ObstacleData
 @export var behaviour: ObstacleBehaviour
 @export var entry_sound: AudioStream
 @export var speed: int
+@export var speed_y: int

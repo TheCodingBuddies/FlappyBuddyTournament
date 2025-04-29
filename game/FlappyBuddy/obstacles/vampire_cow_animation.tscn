@@ -1,0 +1,90 @@
+[gd_scene load_steps=12 format=3 uid="uid://db8gmcy88vnv8"]
+
+[ext_resource type="Texture2D" uid="uid://bk0utln44kpko" path="res://res/VampireCow.png" id="1_pix71"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7g8l"]
+atlas = ExtResource("1_pix71")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flucn"]
+atlas = ExtResource("1_pix71")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4anv"]
+atlas = ExtResource("1_pix71")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fwvtn"]
+atlas = ExtResource("1_pix71")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltu7g"]
+atlas = ExtResource("1_pix71")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_js6r8"]
+atlas = ExtResource("1_pix71")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s3wq"]
+atlas = ExtResource("1_pix71")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6tym"]
+atlas = ExtResource("1_pix71")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb1fn"]
+atlas = ExtResource("1_pix71")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xd0t0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7g8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flucn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d4anv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fwvtn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltu7g")
+}],
+"loop": true,
+"name": &"fire",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_js6r8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3s3wq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6tym")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb1fn")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 4.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_xd0t0")
+autoplay = "default"

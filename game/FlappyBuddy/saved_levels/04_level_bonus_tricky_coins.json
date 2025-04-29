@@ -1,0 +1,135 @@
+[
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 4.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 360.0, "timestamp": 4.3, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 390.0, "timestamp": 4.6, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 400.0, "timestamp": 4.9, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 370.0, "timestamp": 5.2, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 310.0, "timestamp": 5.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 260.0, "timestamp": 5.8, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 250.0, "timestamp": 6.1, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 270.0, "timestamp": 6.4, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 310.0, "timestamp": 6.7, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 360.0, "timestamp": 7.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 390.0, "timestamp": 7.3, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 390.0, "timestamp": 7.6, "type": "Coin" },
+
+
+
+  { "origin_x": 800, "origin_y": 370.0, "timestamp": 11.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 410.0, "timestamp": 11.3, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 11.6, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 450.0, "timestamp": 11.9, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 420.0, "timestamp": 12.2, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 170.0, "timestamp": 12.2, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 210.0, "timestamp": 12.2, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 360.0, "timestamp": 12.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 110.0, "timestamp": 12.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 150.0, "timestamp": 12.5, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 310.0, "timestamp": 12.8, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 60.0, "timestamp": 12.8, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 100.0, "timestamp": 12.8, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 300.0, "timestamp": 13.1, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 50.0, "timestamp": 13.1, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 90.0, "timestamp": 13.1, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 13.4, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 70.0, "timestamp": 13.4, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 110.0, "timestamp": 13.4, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 360.0, "timestamp": 13.7, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 110.0, "timestamp": 13.7, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 150.0, "timestamp": 13.7, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 410.0, "timestamp": 14.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 160.0,  "timestamp": 14.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 200.0, "timestamp": 14.0, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 14.3, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 190.0,  "timestamp": 14.3, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 240.0,  "timestamp": 14.3, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 14.6, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 190.0,  "timestamp": 14.6, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 240.0, "timestamp": 14.6, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 190.0, "timestamp": 14.9, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 240.0, "timestamp": 14.9, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 290.0, "timestamp": 15.2, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 340.0, "timestamp": 15.2, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 290.0, "timestamp": 15.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 340.0, "timestamp": 15.5, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 290.0, "timestamp": 15.8, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 340.0, "timestamp": 15.8, "type": "Coin" },
+
+
+
+
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 80.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 140.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 200.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 260.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 380.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 17.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 17.0, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 260.0, "timestamp": 17.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 17.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 18.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 18.5, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 80.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 140.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 200.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 260.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 380.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 19.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 19.0, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 19.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 20.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 20.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 140.0, "timestamp": 20.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 20.5, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 80.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 140.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 200.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 260.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 380.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 21.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 21.0, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 21.5, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 22.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 22.5, "type": "Coin" },
+
+  { "origin_x": 800, "origin_y": 20.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 80.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 140.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 200.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 260.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 320.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 380.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 440.0, "timestamp": 23.0, "type": "Coin" },
+  { "origin_x": 800, "origin_y": 500.0, "timestamp": 23.0, "type": "Coin" },
+
+  {
+    "origin_x": 800,
+    "origin_y": 256,
+    "timestamp": 25.0,
+    "type": "Finish"
+  }
+]
