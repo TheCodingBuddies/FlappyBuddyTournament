@@ -18,16 +18,16 @@ pub struct Obstacle {
     pub r#type: String,
     pub origin_x: f32,
     pub origin_y: f32,
-    pub height: i32,
-    pub width: i32,
+    pub height: f32,
+    pub width: f32,
     pub close_area_height: i32,
     pub close_area_width: i32,
 }
 
 #[derive(Deserialize, Debug)]
 pub struct Player {
-    pub height: i32,
-    pub width: i32,
+    pub height: f32,
+    pub width: f32,
     pub pos_x: f32,
     pub pos_y: f32,
     pub rotation: f32,

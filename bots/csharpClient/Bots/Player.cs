@@ -5,10 +5,10 @@ namespace CsClient.Bots
     public class Player
     {
         [JsonPropertyName("height")]
-        public int Height { get; set; }
+        public float Height { get; set; }
 
         [JsonPropertyName("width")]
-        public int Width { get; set; }
+        public float Width { get; set; }
 
         [JsonPropertyName("pos_x")]
         public float PosX { get; set; }
@@ -23,7 +23,7 @@ namespace CsClient.Bots
         public string State { get; set; }
 
         [JsonConstructor]
-        public Player(int height, int width, float posX, float posY, float rotation, string state)
+        public Player(float height, float width, float posX, float posY, float rotation, string state)
         {
             Height = height;
             Width = width;
