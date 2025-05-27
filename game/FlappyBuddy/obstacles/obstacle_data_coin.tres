@@ -18,3 +18,4 @@ animation = ExtResource("1_emolt")
 collision = SubResource("CircleShape2D_435ln")
 behaviour = SubResource("Resource_t7ebg")
 speed = 180
+speed_y = 0

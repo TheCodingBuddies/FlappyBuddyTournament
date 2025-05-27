@@ -1,0 +1,193 @@
+[
+  {
+    "origin_x": 800,
+    "origin_y": 256,
+    "timestamp": 4.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 171,
+    "timestamp": 5.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 360,
+    "timestamp": 6.0,
+    "type": "Coin"
+  },
+
+
+
+  {
+    "origin_x": 800,
+    "origin_y": 485,
+    "timestamp": 7.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 453,
+    "timestamp": 7.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 402,
+    "timestamp": 8,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 360,
+    "timestamp": 8.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 336,
+    "timestamp": 9.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 346,
+    "timestamp": 9.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 382,
+    "timestamp": 10,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 415,
+    "timestamp": 10.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 416,
+    "timestamp": 11.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 390,
+    "timestamp": 11.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 343,
+    "timestamp": 12.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 296,
+    "timestamp": 12.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 241,
+    "timestamp": 13.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 202,
+    "timestamp": 13.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 196,
+    "timestamp": 14.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 213,
+    "timestamp": 14.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 249,
+    "timestamp": 15.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 291,
+    "timestamp": 15.5,
+    "type": "Coin"
+  },
+
+
+
+
+
+  {
+    "origin_x": 800,
+    "origin_y": 85,
+    "timestamp": 17,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 17.2,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 120,
+    "timestamp": 17.2,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 85,
+    "timestamp": 17.4,
+    "type": "Coin"
+  },
+
+
+  {
+    "origin_x": 800,
+    "origin_y": 427,
+    "timestamp": 20.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 20.2,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 392,
+    "timestamp": 20.2,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 427,
+    "timestamp": 20.4,
+    "type": "Coin"
+  },
+
+  {
+    "origin_x": 800,
+    "origin_y": 256,
+    "timestamp": 23.0,
+    "type": "Finish"
+  }
+]

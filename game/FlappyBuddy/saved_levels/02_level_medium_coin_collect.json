@@ -1,0 +1,165 @@
+[
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 4.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 256,
+    "timestamp": 5.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 6.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 6.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 9.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 11.5,
+    "type": "Coin"
+  },
+
+
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 16.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 16.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 16.8,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 17.1,
+    "type": "Coin"
+  },
+
+
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 19.6,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 19.6,
+    "type": "Coin"
+  },
+
+
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 22.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 22.3,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 22.6,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 22.6,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 462,
+    "timestamp": 22.9,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 22.9,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 85,
+    "timestamp": 22.9,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 23.2,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 85,
+    "timestamp": 23.2,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 23.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 85,
+    "timestamp": 23.5,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 50,
+    "timestamp": 23.8,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 800,
+    "origin_y": 85,
+    "timestamp": 23.8,
+    "type": "Coin"
+  },
+
+  {
+    "origin_x": 800,
+    "origin_y": 256,
+    "timestamp": 25.0,
+    "type": "Finish"
+  }
+]

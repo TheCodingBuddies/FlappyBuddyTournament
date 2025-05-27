@@ -105,12 +105,15 @@ func is_start_sequence():
 	return level_time < start_sequence_time
 	
 func add_obstacle_data(obstacle):
-	spawned_obstacles.push_back({
+	var o = {
 			"timestamp": level_time,
 			"type": obstacle._get_name_as_string(),
 			"origin_x": obstacle.position.x,
 			"origin_y": obstacle.position.y,
-		})
+		}
+	var json_string = JSON.stringify(o)
+	print(json_string + ',')
+	spawned_obstacles.push_back(o)
 	
 func game_finished() -> void:
 	reset_level()

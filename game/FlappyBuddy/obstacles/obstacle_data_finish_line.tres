@@ -18,3 +18,4 @@ animation = ExtResource("1_t702f")
 collision = SubResource("RectangleShape2D_psjny")
 behaviour = SubResource("Resource_r40rv")
 speed = 200
+speed_y = 0

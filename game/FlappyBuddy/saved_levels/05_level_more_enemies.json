@@ -1,0 +1,1268 @@
+[
+  {
+    "origin_x": 868,
+    "origin_y": 192,
+    "timestamp": 5.03333333333332,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 142,
+    "timestamp": 5.03333333333332,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 142,
+    "timestamp": 5.03333333333332,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 92,
+    "timestamp": 5.03333333333332,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 779,
+    "origin_y": 64.9082260131836,
+    "timestamp": 7.03333333333331,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 237,
+    "timestamp": 7.06666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 187,
+    "timestamp": 7.06666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 187,
+    "timestamp": 7.06666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 137,
+    "timestamp": 7.06666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 163,
+    "timestamp": 9.10000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 148,
+    "timestamp": 9.10000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 138,
+    "timestamp": 9.10000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 133,
+    "timestamp": 9.10000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 133,
+    "timestamp": 9.10000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 123,
+    "timestamp": 9.10000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 795,
+    "origin_y": 434.936279296875,
+    "timestamp": 10.8666666666668,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 383,
+    "timestamp": 11.1333333333335,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 333,
+    "timestamp": 11.1333333333335,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 333,
+    "timestamp": 11.1333333333335,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 283,
+    "timestamp": 11.1333333333335,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 351,
+    "timestamp": 13.1666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 336,
+    "timestamp": 13.1666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 326,
+    "timestamp": 13.1666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 321,
+    "timestamp": 13.1666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 321,
+    "timestamp": 13.1666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 311,
+    "timestamp": 13.1666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 756,
+    "origin_y": 386.605377197266,
+    "timestamp": 14.5000000000003,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 301,
+    "timestamp": 15.2000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 286,
+    "timestamp": 15.2000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 276,
+    "timestamp": 15.2000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 271,
+    "timestamp": 15.2000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 271,
+    "timestamp": 15.2000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 261,
+    "timestamp": 15.2000000000003,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 418,
+    "timestamp": 17.2333333333336,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 403,
+    "timestamp": 17.2333333333336,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 393,
+    "timestamp": 17.2333333333336,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 388,
+    "timestamp": 17.2333333333336,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 388,
+    "timestamp": 17.2333333333336,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 378,
+    "timestamp": 17.2333333333336,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 198,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 178,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 178,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 128,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 128,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 78,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 78,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 58,
+    "timestamp": 19.2666666666669,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 298,
+    "timestamp": 21.3000000000001,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 298,
+    "timestamp": 21.3000000000001,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 298,
+    "timestamp": 21.3000000000001,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 753,
+    "origin_y": 278.195770263672,
+    "timestamp": 23.0666666666666,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 192,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 172,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 172,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 122,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 122,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 72,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 72,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 52,
+    "timestamp": 23.3333333333333,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 356,
+    "timestamp": 25.3666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 356,
+    "timestamp": 25.3666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 356,
+    "timestamp": 25.3666666666665,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 787,
+    "origin_y": 308.404571533203,
+    "timestamp": 25.4999999999998,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 457,
+    "timestamp": 27.3999999999997,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 407,
+    "timestamp": 27.3999999999997,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 407,
+    "timestamp": 27.3999999999997,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 357,
+    "timestamp": 27.3999999999997,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 766,
+    "origin_y": 74.8390579223633,
+    "timestamp": 27.733333333333,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 340,
+    "timestamp": 29.4333333333329,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 290,
+    "timestamp": 29.4333333333329,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 290,
+    "timestamp": 29.4333333333329,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 240,
+    "timestamp": 29.4333333333329,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 760,
+    "origin_y": 225.789108276367,
+    "timestamp": 29.7666666666663,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 114,
+    "timestamp": 31.4666666666662,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 114,
+    "timestamp": 31.4666666666662,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 114,
+    "timestamp": 31.4666666666662,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 798,
+    "origin_y": 134.931503295898,
+    "timestamp": 31.5666666666662,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 755,
+    "origin_y": 483.340606689453,
+    "timestamp": 33.0833333333327,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 53,
+    "timestamp": 33.4999999999994,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 38,
+    "timestamp": 33.4999999999994,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 28,
+    "timestamp": 33.4999999999994,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 23,
+    "timestamp": 33.4999999999994,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 23,
+    "timestamp": 33.4999999999994,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 13,
+    "timestamp": 33.4999999999994,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 195,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 175,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 175,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 125,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 125,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 75,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 75,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 55,
+    "timestamp": 35.5333333333326,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 14,
+    "timestamp": 37.5666666666658,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 14,
+    "timestamp": 37.5666666666658,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 14,
+    "timestamp": 37.5666666666658,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 776,
+    "origin_y": 206.061370849609,
+    "timestamp": 38.3499999999991,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 394,
+    "timestamp": 39.599999999999,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 344,
+    "timestamp": 39.599999999999,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 344,
+    "timestamp": 39.599999999999,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 294,
+    "timestamp": 39.599999999999,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 782,
+    "origin_y": 176.945541381836,
+    "timestamp": 41.1999999999989,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 72,
+    "timestamp": 41.6333333333323,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 57,
+    "timestamp": 41.6333333333323,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 47,
+    "timestamp": 41.6333333333323,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 42,
+    "timestamp": 41.6333333333323,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 42,
+    "timestamp": 41.6333333333323,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 32,
+    "timestamp": 41.6333333333323,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 767,
+    "origin_y": 94.1490631103516,
+    "timestamp": 42.8333333333322,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 767,
+    "origin_y": 28.8437881469727,
+    "timestamp": 43.6499999999988,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 442,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 422,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 422,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 372,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 372,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 322,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 322,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 302,
+    "timestamp": 43.6666666666655,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 765,
+    "origin_y": 370.313140869141,
+    "timestamp": 45.283333333332,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 236,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 216,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 216,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 166,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 166,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 116,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 116,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 96,
+    "timestamp": 45.6999999999987,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 772,
+    "origin_y": 108.421745300293,
+    "timestamp": 46.0999999999987,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 757,
+    "origin_y": 18.5839195251465,
+    "timestamp": 46.9166666666653,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 796,
+    "origin_y": 418.764221191406,
+    "timestamp": 47.7333333333319,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 10,
+    "timestamp": 47.7333333333319,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 10,
+    "timestamp": 47.7333333333319,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 10,
+    "timestamp": 47.7333333333319,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 770,
+    "origin_y": 7.95417642593384,
+    "timestamp": 49.3666666666651,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 50,
+    "timestamp": 49.7666666666651,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 35,
+    "timestamp": 49.7666666666651,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 25,
+    "timestamp": 49.7666666666651,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 20,
+    "timestamp": 49.7666666666651,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 20,
+    "timestamp": 49.7666666666651,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 10,
+    "timestamp": 49.7666666666651,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 785,
+    "origin_y": 223.418365478516,
+    "timestamp": 50.1833333333318,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 758,
+    "origin_y": 350.687652587891,
+    "timestamp": 50.9999999999984,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 173,
+    "timestamp": 51.7999999999983,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 158,
+    "timestamp": 51.7999999999983,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 148,
+    "timestamp": 51.7999999999983,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 143,
+    "timestamp": 51.7999999999983,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 143,
+    "timestamp": 51.7999999999983,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 133,
+    "timestamp": 51.7999999999983,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 770,
+    "origin_y": 82.1709747314453,
+    "timestamp": 51.816666666665,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 762,
+    "origin_y": 403.048034667969,
+    "timestamp": 53.4499999999982,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 367,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 347,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 347,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 297,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 297,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 247,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 247,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 227,
+    "timestamp": 53.8333333333316,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 774,
+    "origin_y": 168.195663452148,
+    "timestamp": 54.2666666666649,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 795,
+    "origin_y": 274.881195068359,
+    "timestamp": 55.0833333333315,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 495,
+    "timestamp": 55.8666666666648,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 480,
+    "timestamp": 55.8666666666648,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 470,
+    "timestamp": 55.8666666666648,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 465,
+    "timestamp": 55.8666666666648,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 465,
+    "timestamp": 55.8666666666648,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 455,
+    "timestamp": 55.8666666666648,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 779,
+    "origin_y": 375.389434814453,
+    "timestamp": 55.8999999999981,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 763,
+    "origin_y": 486.463897705078,
+    "timestamp": 57.5333333333313,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 485,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 465,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 465,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 415,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 415,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 365,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 365,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 345,
+    "timestamp": 57.899999999998,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 758,
+    "origin_y": 92.9979553222656,
+    "timestamp": 59.1666666666646,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 338,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 318,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 318,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 268,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 268,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 218,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 218,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 198,
+    "timestamp": 59.9333333333312,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 796,
+    "origin_y": 443.445495605469,
+    "timestamp": 59.9833333333312,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 784,
+    "origin_y": 226.92610168457,
+    "timestamp": 60.7999999999978,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 759,
+    "origin_y": 321.9599609375,
+    "timestamp": 61.6166666666645,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 968,
+    "origin_y": 381,
+    "timestamp": 61.9666666666644,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1018,
+    "origin_y": 366,
+    "timestamp": 61.9666666666644,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 356,
+    "timestamp": 61.9666666666644,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 351,
+    "timestamp": 61.9666666666644,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 1068,
+    "origin_y": 351,
+    "timestamp": 61.9666666666644,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 341,
+    "timestamp": 61.9666666666644,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 755,
+    "origin_y": 144.184265136719,
+    "timestamp": 62.4333333333311,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 799,
+    "origin_y": 2.00263166427612,
+    "timestamp": 63.2499999999977,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 328,
+    "timestamp": 63.9999999999976,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 328,
+    "timestamp": 63.9999999999976,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 918,
+    "origin_y": 328,
+    "timestamp": 63.9999999999976,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 752,
+    "origin_y": 268.244201660156,
+    "timestamp": 64.0666666666643,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 792,
+    "origin_y": 241.566497802734,
+    "timestamp": 65.6999999999976,
+    "type": "Seagull"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 179,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 159,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 159,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 958,
+    "origin_y": 109,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 109,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 838,
+    "origin_y": 59,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 938,
+    "origin_y": 59,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 888,
+    "origin_y": 39,
+    "timestamp": 66.0333333333309,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 779,
+    "origin_y": 90.6718673706055,
+    "timestamp": 67.3333333333308,
+    "type": "Raven"
+  },
+  {
+    "origin_x": 868,
+    "origin_y": 491,
+    "timestamp": 68.0,
+    "type": "Coin"
+  },
+  {
+    "origin_x": 818,
+    "origin_y": 256,
+    "timestamp": 72,
+    "type": "Finish"
+  }
+]

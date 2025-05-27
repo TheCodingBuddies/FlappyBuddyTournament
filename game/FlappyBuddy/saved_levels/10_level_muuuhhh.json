@@ -1,0 +1,218 @@
+[
+  {"origin_x":850,"origin_y":153,"timestamp":3.1,"type":"Coin"},
+  {"origin_x":900,"origin_y":103,"timestamp":3.1,"type":"Coin"},
+  {"origin_x":800,"origin_y":103,"timestamp":3.1,"type":"Coin"},
+  {"origin_x":850,"origin_y": 53,"timestamp":3.1,"type":"Coin"},
+
+  {"origin_x":800,"origin_y":285,"timestamp":4.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":337,"timestamp":4.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":389,"timestamp":4.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":4.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":4.0,"type":"Seagull"},
+
+  {"origin_x": 950,"origin_y":326,"timestamp":5.0,"type":"Coin"},
+  {"origin_x":1000,"origin_y":311,"timestamp":5.0,"type":"Coin"},
+  {"origin_x": 900,"origin_y":301,"timestamp":5.0,"type":"Coin"},
+  {"origin_x": 800,"origin_y":296,"timestamp":5.0,"type":"Coin"},
+  {"origin_x":1050,"origin_y":296,"timestamp":5.0,"type":"Coin"},
+  {"origin_x": 850,"origin_y":286,"timestamp":5.0,"type":"Coin"},
+
+  {"origin_x":800,"origin_y": 25,"timestamp":6.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 77,"timestamp":6.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":129,"timestamp":6.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":181,"timestamp":6.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":233,"timestamp":6.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":450,"timestamp":7.0,"type":"Coin"},
+  {"origin_x":850,"origin_y":450,"timestamp":7.0,"type":"Coin"},
+  {"origin_x":900,"origin_y":450,"timestamp":7.0,"type":"Coin"},
+
+  {"origin_x":800,"origin_y":65,"timestamp":7.7,"type":"Coin"},
+  {"origin_x":850,"origin_y":65,"timestamp":7.7,"type":"Coin"},
+  {"origin_x":900,"origin_y":65,"timestamp":7.7,"type":"Coin"},
+
+  {"origin_x":800,"origin_y":285,"timestamp":8.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":337,"timestamp":8.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":389,"timestamp":8.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":8.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":8.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":233,"timestamp":10.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":285,"timestamp":10.0,"type":"Seagull"},
+
+  {"origin_x":888,"origin_y":378,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":938,"origin_y":358,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":838,"origin_y":358,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":958,"origin_y":308,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":818,"origin_y":308,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":838,"origin_y":258,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":938,"origin_y":258,"timestamp":10.0,"type":"Coin"},
+  {"origin_x":888,"origin_y":238,"timestamp":10.0,"type":"Coin"},
+
+  {"origin_x":800,"origin_y": 25,"timestamp":12.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 77,"timestamp":12.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":129,"timestamp":12.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":389,"timestamp":12.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":12.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":12.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":50,"timestamp":12,"type":"Coin"},
+  {"origin_x":850,"origin_y":50,"timestamp":12,"type":"Coin"},
+  {"origin_x":900,"origin_y":50,"timestamp":12,"type":"Coin"},
+
+  {"origin_x": 950,"origin_y":480,"timestamp":12.0,"type":"Coin"},
+  {"origin_x":1000,"origin_y":465,"timestamp":12.0,"type":"Coin"},
+  {"origin_x": 900,"origin_y":455,"timestamp":12.0,"type":"Coin"},
+  {"origin_x": 800,"origin_y":450,"timestamp":12.0,"type":"Coin"},
+  {"origin_x":1050,"origin_y":450,"timestamp":12.0,"type":"Coin"},
+  {"origin_x": 850,"origin_y":440,"timestamp":12.0,"type":"Coin"},
+
+  {"origin_x":800,"origin_y":181,"timestamp":14.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":233,"timestamp":14.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":285,"timestamp":14.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":337,"timestamp":14.0,"type":"Seagull"},
+
+  {"origin_x":870,"origin_y":378,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":920,"origin_y":358,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":820,"origin_y":358,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":940,"origin_y":308,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":800,"origin_y":308,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":820,"origin_y":258,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":920,"origin_y":258,"timestamp":14.0,"type":"Coin"},
+  {"origin_x":870,"origin_y":238,"timestamp":14.0,"type":"Coin"},
+
+  {"origin_x":800,"origin_y": 25,"timestamp":16.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 77,"timestamp":16.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":129,"timestamp":16.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":337,"timestamp":16.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":389,"timestamp":16.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":16.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":16.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":50,"timestamp":16,"type":"Coin"},
+  {"origin_x":850,"origin_y":50,"timestamp":16,"type":"Coin"},
+  {"origin_x":900,"origin_y":50,"timestamp":16,"type":"Coin"},
+  {"origin_x":800,"origin_y":460,"timestamp":16,"type":"Coin"},
+  {"origin_x":850,"origin_y":460,"timestamp":16,"type":"Coin"},
+  {"origin_x":900,"origin_y":460,"timestamp":16,"type":"Coin"},
+
+  {"origin_x":800,"origin_y":50,"timestamp":16.8,"type":"Coin"},
+  {"origin_x":850,"origin_y":50,"timestamp":16.8,"type":"Coin"},
+  {"origin_x":900,"origin_y":50,"timestamp":16.8,"type":"Coin"},
+  {"origin_x":800,"origin_y":460,"timestamp":16.8,"type":"Coin"},
+  {"origin_x":850,"origin_y":460,"timestamp":16.8,"type":"Coin"},
+  {"origin_x":900,"origin_y":460,"timestamp":16.8,"type":"Coin"},
+
+  {"origin_x":800,"origin_y":181,"timestamp":18.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":233,"timestamp":18.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":285,"timestamp":18.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":337,"timestamp":18.0,"type":"Raven"},
+
+  {"origin_x":850,"origin_y":300,"timestamp":18,"type":"Coin"},
+  {"origin_x":900,"origin_y":250,"timestamp":18,"type":"Coin"},
+  {"origin_x":800,"origin_y":250,"timestamp":18,"type":"Coin"},
+  {"origin_x":850,"origin_y":200,"timestamp":18,"type":"Coin"},
+
+  {"origin_x":800,"origin_y": 25,"timestamp":20.0,"type":"Raven"},
+  {"origin_x":800,"origin_y": 77,"timestamp":20.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":129,"timestamp":20.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":181,"timestamp":20.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":389,"timestamp":20.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":441,"timestamp":20.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":493,"timestamp":20.0,"type":"Raven"},
+
+  {"origin_x":800,"origin_y":285,"timestamp":22.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":337,"timestamp":22.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":389,"timestamp":22.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":441,"timestamp":22.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":493,"timestamp":22.0,"type":"Raven"},
+
+  {"origin_x":800,"origin_y": 25,"timestamp":24.0,"type":"Raven"},
+  {"origin_x":800,"origin_y": 77,"timestamp":24.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":129,"timestamp":24.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":181,"timestamp":24.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":233,"timestamp":24.0,"type":"Raven"},
+
+
+
+
+
+
+
+
+  {"origin_x":800,"origin_y": 25,"timestamp":26.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 77,"timestamp":26.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":129,"timestamp":26.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":181,"timestamp":26.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":389,"timestamp":26.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":26.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":26.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y": 20.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y": 20.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y": 80.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":140.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":200.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":260.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":320.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":380.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":440.0,"timestamp":26,"type":"Coin"},
+  {"origin_x":800,"origin_y":500.0,"timestamp":26,"type":"Coin"},
+
+  {"origin_x":800,"origin_y": 25,"timestamp":28,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":233,"timestamp":28,"type":"Seagull"},
+  {"origin_x":800,"origin_y":285,"timestamp":28,"type":"Seagull"},
+  {"origin_x":800,"origin_y":337,"timestamp":28,"type":"Seagull"},
+  {"origin_x":800,"origin_y":389,"timestamp":28,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":28,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":28,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y": 20.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y": 20.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y": 80.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":140.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":200.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":260.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":320.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":380.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":440.0,"timestamp":28,"type":"Coin"},
+  {"origin_x":800,"origin_y":500.0,"timestamp":28,"type":"Coin"},
+
+
+  {"origin_x":800,"origin_y": 25,"timestamp":30,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 77,"timestamp":30,"type":"Seagull"},
+  {"origin_x":800,"origin_y":129,"timestamp":30,"type":"Seagull"},
+  {"origin_x":800,"origin_y":181,"timestamp":30,"type":"Seagull"},
+  {"origin_x":800,"origin_y":233,"timestamp":30,"type":"Seagull"},
+  {"origin_x":800,"origin_y":285,"timestamp":30,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":493,"timestamp":30,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y": 20.0,"timestamp":30,"type":"Coin"},
+  {"origin_x":800,"origin_y": 20.0,"timestamp":30,"type":"Coin"},
+  {"origin_x":800,"origin_y": 80.0,"timestamp":30,"type":"Coin"},
+  {"origin_x":800,"origin_y":140.0,"timestamp":30,"type":"Coin"},
+  {"origin_x":800,"origin_y":200.0,"timestamp":30,"type":"Coin"},
+
+
+  {"origin_x":800,"origin_y": 25,"timestamp":32,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 77,"timestamp":32,"type":"Seagull"},
+  {"origin_x":800,"origin_y":129,"timestamp":32,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":389,"timestamp":32,"type":"Seagull"},
+  {"origin_x":800,"origin_y":441,"timestamp":32,"type":"Seagull"},
+  {"origin_x":800,"origin_y":493,"timestamp":32,"type":"Seagull"},
+
+
+  {"origin_x":850,"origin_y":256,"timestamp":36,"type":"VampireCow"},
+
+
+  {
+    "origin_x": 818,
+    "origin_y": 256,
+    "timestamp": 73,
+    "type": "Finish"
+  }
+]

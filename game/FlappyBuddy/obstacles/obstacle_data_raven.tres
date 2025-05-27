@@ -24,3 +24,4 @@ closeArea = SubResource("RectangleShape2D_sivb4")
 behaviour = SubResource("Resource_x8vkw")
 entry_sound = ExtResource("2_ba5ej")
 speed = 300
+speed_y = 0

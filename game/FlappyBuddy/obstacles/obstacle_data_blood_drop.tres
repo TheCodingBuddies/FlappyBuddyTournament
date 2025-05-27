@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ObstacleData" load_steps=7 format=3 uid="uid://5m7urn8335aw"]
+
+[ext_resource type="Script" path="res://obstacles/obstacle_data.gd" id="1_ogtye"]
+[ext_resource type="PackedScene" uid="uid://dc85t8dli4mec" path="res://obstacles/blood_drop_animation.tscn" id="1_osjk0"]
+[ext_resource type="Script" path="res://obstacles/blood_drop_behaviour.gd" id="2_k5gyq"]
+
+[sub_resource type="Resource" id="Resource_kfurh"]
+script = ExtResource("2_k5gyq")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8vswj"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sgd71"]
+size = Vector2(16, 16)
+
+[resource]
+script = ExtResource("1_ogtye")
+obstacle_name = "BloodDrop"
+points = 500
+animation = ExtResource("1_osjk0")
+collision = SubResource("RectangleShape2D_sgd71")
+closeArea = SubResource("RectangleShape2D_8vswj")
+behaviour = SubResource("Resource_kfurh")
+speed = 100
+speed_y = 0

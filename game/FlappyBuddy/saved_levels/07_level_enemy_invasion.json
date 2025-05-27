@@ -1,0 +1,165 @@
+[
+  {"origin_x":800,"origin_y":268,"timestamp":4.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":121,"timestamp":6.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":423,"timestamp":6.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 17,"timestamp":8.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":268,"timestamp":8.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":485,"timestamp":8.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":121,"timestamp":10.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":425,"timestamp":11.0,"type":"Raven"},
+
+  {"origin_x":800,"origin_y":268,"timestamp":13.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":121,"timestamp":14.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":423,"timestamp":14.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 17,"timestamp":15.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":268,"timestamp":15.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":485,"timestamp":15.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":235,"timestamp":16.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":100,"timestamp":17.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":450,"timestamp":18.0,"type":"Raven"},
+
+  {"origin_x":800,"origin_y":268,"timestamp":19.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":121,"timestamp":19.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":423,"timestamp":19.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 17,"timestamp":20.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":268,"timestamp":20.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":499,"timestamp":20.0,"type":"Seagull"},
+
+
+
+  {"origin_x":800,"origin_y":287,"timestamp":23.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":339,"timestamp":23.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":235,"timestamp":24.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":387,"timestamp":24.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":171,"timestamp":25.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":436,"timestamp":25.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":285,"timestamp":25.5,"type":"Raven"},
+  {"origin_x":800,"origin_y":109,"timestamp":26.0,"type":"Seagull"},
+  {"origin_x":830,"origin_y":486,"timestamp":26.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":285,"timestamp":26.5,"type":"Raven"},
+  {"origin_x":810,"origin_y": 34,"timestamp":27.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 285,"timestamp":27.5,"type":"Raven"},
+
+
+
+  {"origin_x":800,"origin_y": 23,"timestamp":30.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 60,"timestamp":30.3,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 98,"timestamp":30.6,"type":"Seagull"},
+  {"origin_x":800,"origin_y":139,"timestamp":30.9,"type":"Seagull"},
+  {"origin_x":800,"origin_y":176,"timestamp":31.2,"type":"Seagull"},
+  {"origin_x":800,"origin_y":214,"timestamp":31.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":247,"timestamp":31.8,"type":"Seagull"},
+  {"origin_x":800,"origin_y":278,"timestamp":32.1,"type":"Seagull"},
+  {"origin_x":800,"origin_y":302,"timestamp":32.4,"type":"Seagull"},
+  {"origin_x":800,"origin_y":437,"timestamp":32.7,"type":"Seagull"},
+  {"origin_x":800,"origin_y":472,"timestamp":33.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y":498,"timestamp":33.3,"type":"Seagull"},
+  {"origin_x":800,"origin_y":467,"timestamp":33.6,"type":"Seagull"},
+  {"origin_x":800,"origin_y":442,"timestamp":33.9,"type":"Seagull"},
+  {"origin_x":800,"origin_y":412,"timestamp":34.2,"type":"Seagull"},
+  {"origin_x":800,"origin_y":373,"timestamp":34.5,"type":"Seagull"},
+  {"origin_x":800,"origin_y":342,"timestamp":34.8,"type":"Seagull"},
+  {"origin_x":800,"origin_y":294,"timestamp":35.1,"type":"Seagull"},
+  {"origin_x":800,"origin_y":249,"timestamp":35.4,"type":"Seagull"},
+  {"origin_x":800,"origin_y":113,"timestamp":35.7,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 70,"timestamp":36.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 33,"timestamp":36.3,"type":"Seagull"},
+
+
+
+  {"origin_x":800,"origin_y": 19,"timestamp":38.0,"type":"Raven"},
+  {"origin_x":800,"origin_y": 34,"timestamp":38.3,"type":"Raven"},
+  {"origin_x":800,"origin_y": 68,"timestamp":38.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":103,"timestamp":38.9,"type":"Raven"},
+  {"origin_x":800,"origin_y":139,"timestamp":39.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":171,"timestamp":39.5,"type":"Raven"},
+  {"origin_x":800,"origin_y":214,"timestamp":39.8,"type":"Raven"},
+  {"origin_x":800,"origin_y":251,"timestamp":40.1,"type":"Raven"},
+  {"origin_x":800,"origin_y":292,"timestamp":40.4,"type":"Raven"},
+
+  {"origin_x":800,"origin_y":481,"timestamp":40.7,"type":"Raven"},
+  {"origin_x":800,"origin_y":443,"timestamp":41.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":406,"timestamp":41.3,"type":"Raven"},
+  {"origin_x":800,"origin_y":369,"timestamp":41.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":326,"timestamp":41.9,"type":"Raven"},
+  {"origin_x":800,"origin_y":279,"timestamp":42.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":228,"timestamp":42.5,"type":"Raven"},
+
+
+
+  {"origin_x":800,"origin_y":498,"timestamp":43.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":467,"timestamp":43.2,"type":"Seagull"},
+  {"origin_x":800,"origin_y":442,"timestamp":43.4,"type":"Seagull"},
+  {"origin_x":800,"origin_y":412,"timestamp":43.6,"type":"Seagull"},
+  {"origin_x":800,"origin_y":373,"timestamp":43.8,"type":"Seagull"},
+  {"origin_x":800,"origin_y":342,"timestamp":44.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":294,"timestamp":44.2,"type":"Seagull"},
+  {"origin_x":800,"origin_y":249,"timestamp":44.4,"type":"Seagull"},
+  {"origin_x":800,"origin_y":113,"timestamp":44.6,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 70,"timestamp":44.8,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 33,"timestamp":45.0,"type":"Seagull"},
+
+  {"origin_x":800,"origin_y": 23,"timestamp":45.2,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 60,"timestamp":45.4,"type":"Seagull"},
+  {"origin_x":800,"origin_y": 98,"timestamp":45.6,"type":"Seagull"},
+  {"origin_x":800,"origin_y":139,"timestamp":45.8,"type":"Seagull"},
+  {"origin_x":800,"origin_y":176,"timestamp":46.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":214,"timestamp":46.2,"type":"Seagull"},
+  {"origin_x":800,"origin_y":247,"timestamp":46.4,"type":"Seagull"},
+  {"origin_x":800,"origin_y":278,"timestamp":46.6,"type":"Seagull"},
+  {"origin_x":800,"origin_y":302,"timestamp":46.8,"type":"Seagull"},
+  {"origin_x":800,"origin_y":437,"timestamp":47.0,"type":"Seagull"},
+  {"origin_x":800,"origin_y":472,"timestamp":47.2,"type":"Seagull"},
+
+
+
+  {"origin_x":800,"origin_y":565,"timestamp":49.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":522,"timestamp":49.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":481,"timestamp":49.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":443,"timestamp":49.8,"type":"Raven"},
+  {"origin_x":800,"origin_y":406,"timestamp":50.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":369,"timestamp":50.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":326,"timestamp":50.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":279,"timestamp":50.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":228,"timestamp":50.8,"type":"Raven"},
+
+  {"origin_x":800,"origin_y": 19,"timestamp":50.8,"type":"Raven"},
+  {"origin_x":800,"origin_y": 34,"timestamp":51.0,"type":"Raven"},
+  {"origin_x":800,"origin_y": 68,"timestamp":51.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":103,"timestamp":51.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":139,"timestamp":51.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":171,"timestamp":51.8,"type":"Raven"},
+  {"origin_x":800,"origin_y":214,"timestamp":52.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":251,"timestamp":52.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":292,"timestamp":52.4,"type":"Raven"},
+
+  {"origin_x":800,"origin_y":565,"timestamp":52.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":522,"timestamp":52.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":481,"timestamp":52.8,"type":"Raven"},
+  {"origin_x":800,"origin_y":443,"timestamp":53.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":406,"timestamp":53.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":369,"timestamp":53.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":326,"timestamp":53.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":279,"timestamp":53.8,"type":"Raven"},
+  {"origin_x":800,"origin_y":228,"timestamp":54.0,"type":"Raven"},
+
+  {"origin_x":800,"origin_y": 19,"timestamp":54.0,"type":"Raven"},
+  {"origin_x":800,"origin_y": 34,"timestamp":54.2,"type":"Raven"},
+  {"origin_x":800,"origin_y": 68,"timestamp":54.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":103,"timestamp":54.6,"type":"Raven"},
+  {"origin_x":800,"origin_y":139,"timestamp":54.8,"type":"Raven"},
+  {"origin_x":800,"origin_y":171,"timestamp":55.0,"type":"Raven"},
+  {"origin_x":800,"origin_y":214,"timestamp":55.2,"type":"Raven"},
+  {"origin_x":800,"origin_y":251,"timestamp":55.4,"type":"Raven"},
+  {"origin_x":800,"origin_y":292,"timestamp":55.6,"type":"Raven"},
+
+  {"origin_x":800,"origin_y":176,"timestamp":57,"type":"Coin"},
+  {"origin_x":800,"origin_y":177,"timestamp":58.607,"type":"Seagull"},
+
+
+
+  {"origin_x":800,"origin_y":256,"timestamp":60,"type":"Finish"}
+]
