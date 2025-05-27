@@ -10,8 +10,8 @@ public class Obstacle {
     private String type;
     private float originX;
     private float originY;
-    private int height;
-    private int width;
+    private float height;
+    private float width;
     private int closeAreaHeight;
     private int closeAreaWidth;
 
@@ -20,8 +20,8 @@ public class Obstacle {
             @JsonProperty("type") String type,
             @JsonProperty("origin_x") float originX,
             @JsonProperty("origin_y") float originY,
-            @JsonProperty("height") int height,
-            @JsonProperty("width") int width,
+            @JsonProperty("height") float height,
+            @JsonProperty("width") float width,
             @JsonProperty("close_area_height") int closeAreaHeight,
             @JsonProperty("close_area_width") int closeAreaWidth) {
         this.type = type;
@@ -45,11 +45,11 @@ public class Obstacle {
         return originY;
     }
 
-    public int getHeight() {
+    public float getHeight() {
         return height;
     }
 
-    public int getWidth() {
+    public float getWidth() {
         return width;
     }
 
@@ -73,11 +73,11 @@ public class Obstacle {
         this.originY = originY;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(float height) {
         this.height = height;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(float width) {
         this.width = width;
     }
 

@@ -6,16 +6,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class Player {
-    private int height;
-    private int width;
+    private float height;
+    private float width;
     private float posX;
     private float posY;
     private float rotation;
     private String state;
 
     @JsonCreator
-    public Player(@JsonProperty("height") int height,
-                  @JsonProperty("width") int width,
+    public Player(@JsonProperty("height") float height,
+                  @JsonProperty("width") float width,
                   @JsonProperty("pos_x") float posX,
                   @JsonProperty("pos_y") float posY,
                   @JsonProperty("rotation") float rotation,
@@ -28,11 +28,11 @@ public class Player {
         this.state = state;
     }
 
-    public int getHeight() {
+    public float getHeight() {
         return height;
     }
 
-    public int getWidth() {
+    public float getWidth() {
         return width;
     }
 
@@ -52,11 +52,11 @@ public class Player {
         return state;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(float height) {
         this.height = height;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(float width) {
         this.width = width;
     }
 
