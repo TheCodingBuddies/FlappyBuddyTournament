@@ -11,7 +11,7 @@ Solltet ihr Fragen haben oder Hilfe benötigen. Scheut euch nicht uns auf unsere
 ## Aufgabe
 
 Es ist ein **Bot** zu entwickeln, der die Kontrolle des Fliegers in Flappy Buddy übernimmt. Hierfür haben wir eine
-Schnittstelle in den jeweiligen Clients (Java, Python, C# oder Rust) bereit gestellt, welche implementiert werden muss.
+Schnittstelle in den jeweiligen Clients (Java, Python, C#, Rust oder Go) bereit gestellt, welche implementiert werden muss.
 Das Ziel ist es die Ziellinie zu erreichen und dabei so viele Münzen wie möglich einzusammeln und Gegnern auszuweichen.
 Knacke den Highscore!
 
@@ -27,6 +27,7 @@ Knacke den Highscore!
 - Java SDK 17+  (falls der Bot in Java geschrieben wird)
 - dotnet 8.0 (falls der Bot in csharp geschrieben wird)
 - rust 1.84 (falls der Bot in Rust geschrieben wird)
+- go 1.23.5 (falls der Bot in Go geschrieben wird)
 
 ### Was beinhaltet das Repository?
 
@@ -36,6 +37,7 @@ Knacke den Highscore!
     - Java
     - C##
     - Rust
+    - Go
 
 ## Das Game starten
 
