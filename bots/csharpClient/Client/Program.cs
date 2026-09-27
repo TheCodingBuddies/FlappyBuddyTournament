@@ -2,11 +2,18 @@
 using CsClient.Bots.Internal;
 using CsClient.CsharpClient;
 
-Parser.Default.ParseArguments<Options>(args)
-    .WithParsed(Run)
-    .WithNotParsed(OnError);
+var result = Parser.Default.ParseArguments<Options>(args);
 
-static async void Run(Options o)
+if (result.Tag == ParserResultType.NotParsed)
+{
+    OnError(result.Errors);
+    return -1;
+}
+
+await RunAsync(result.Value).ConfigureAwait(false);
+return 0;
+
+static async Task RunAsync(Options o)
 {
 #if DEBUG
     Console.WriteLine("Debug Mode");
@@ -15,17 +22,17 @@ static async void Run(Options o)
     string serverUrl = $"ws://{o.Server}:{o.Port}";
     Console.WriteLine($"Run Bot {o.Name} with Serveraddress: {serverUrl}");
 
-    FlappyBuddyWebsocketClient myClient = new FlappyBuddyWebsocketClient(
+    var myClient = new FlappyBuddyWebsocketClient(
         BotFactory.GetBotByName(o.Name!));
 
-    myClient.OnOpen += (s, e) => { Console.WriteLine("Connected!"); };
-    myClient.OnClose += (s, e) =>
+    myClient.OnOpen += (_, _) => { Console.WriteLine("Connected!"); };
+    myClient.OnClose += async (_, _) =>
     {
-        myClient.Disconnect().Wait();
+        await myClient.DisconnectAsync().ConfigureAwait(false);
         Console.WriteLine("Closed");
     };
 
-    await myClient.Connect(serverUrl);
+    await myClient.Connect(serverUrl).ConfigureAwait(false);
 }
 
 static void OnError(IEnumerable<Error> errors)
