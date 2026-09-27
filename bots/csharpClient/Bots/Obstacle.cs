@@ -14,19 +14,19 @@ namespace CsClient.Bots
         public float OriginY { get; set; }
 
         [JsonPropertyName("height")]
-        public int Height { get; set; }
+        public float Height { get; set; }
 
         [JsonPropertyName("width")]
-        public int Width { get; set; }
+        public float Width { get; set; }
 
         [JsonPropertyName("close_area_height")]
-        public int CloseAreaHeight { get; set; }
+        public float CloseAreaHeight { get; set; }
 
         [JsonPropertyName("close_area_width")]
-        public int CloseAreaWidth { get; set; }
+        public float CloseAreaWidth { get; set; }
 
         [JsonConstructor]
-        public Obstacle(string type, float originX, float originY, int height, int width, int closeAreaHeight, int closeAreaWidth)
+        public Obstacle(string type, float originX, float originY, float height, float width, float closeAreaHeight, float closeAreaWidth)
         {
             Type = type;
             OriginX = originX;
