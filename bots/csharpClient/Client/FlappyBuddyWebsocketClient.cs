@@ -8,11 +8,8 @@ namespace CsClient.CsharpClient
 {
     public class FlappyBuddyWebsocketClient : IDisposable
     {
-        public delegate void MyMessageReceivedEventHandler(object sender, string message);
-
         public event EventHandler? OnOpen;
         public event EventHandler? OnClose;
-        public event MyMessageReceivedEventHandler? OnMessage;
 
         private readonly UTF8Encoding _encoding = new();
         private readonly IBot _bot;
@@ -21,121 +18,113 @@ namespace CsClient.CsharpClient
         /// <summary>
         /// Verbindet mit Zielurl
         /// </summary>
-        /// <param name="uri"></param>
-        /// <returns>Das Taskobjekt welches die asynchrone ausfuehrung repraesentiert</returns>
         public async Task Connect(string uri)
         {
-            await Connect(new Uri(uri + "/" + _bot.Name));
+            await ConnectInternal(new Uri($"{uri}/{_bot.Name}")).ConfigureAwait(false);
         }
 
         /// <summary>
         /// Verbindet mit Zielurl
         /// </summary>
-        /// <param name="uri"></param>
-        /// <returns>Das Taskobjekt welches die asynchrone ausfuehrung repraesentiert</returns>
-        public async Task Connect(Uri uri) 
+        public async Task Connect(Uri uri)
+        {
+            await ConnectInternal(new Uri(uri, _bot.Name)).ConfigureAwait(false);
+        }
+
+        /// <summary>
+        /// Verbindet mit Zielurl
+        /// </summary>
+        /// <param name="uri">muss den Botnamen enthalten</param>
+        private async Task ConnectInternal(Uri uri) 
         {
             _webSocket?.Dispose();
             _webSocket = new();
-            _webSocket.ConnectAsync(uri, CancellationToken.None).Wait();
+            await _webSocket.ConnectAsync(uri, CancellationToken.None).ConfigureAwait(false);
+
+            await using (var webSocketStream = WebSocketStream.CreateReadableMessageStream(_webSocket))
+            {
+                var initialMessage = new byte[4];
+                await webSocketStream.ReadExactlyAsync(initialMessage, offset: 0, count: 4).ConfigureAwait(false);
+                Console.WriteLine($"Initial message: {_encoding.GetString(initialMessage)}");
+            }
 
             OnOpen?.Invoke(this, EventArgs.Empty);
-            await Listen();
+            await ListenAsync().ConfigureAwait(false);
         }
 
         /// <summary>
         /// Trennt die Verbindung zum Flappy Buddy Server.
         /// </summary>
-        /// <returns>Das Taskobjekt welches die asynchrone ausfuehrung repraesentiert</returns>
-        public async Task Disconnect()
+        public async Task DisconnectAsync()
         {
-            if (_webSocket is not null)
+            if (_webSocket is ClientWebSocket webSocket)
             {
-                await _webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Normal Closure", CancellationToken.None);
-                _webSocket.Dispose();
+                await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, "Normal Closure", CancellationToken.None)
+                    .ConfigureAwait(false);
+                webSocket.Dispose();
             }
             OnClose?.Invoke(this, EventArgs.Empty);
         }
 
         /// <summary>
-        /// Sendet Nachricht an den Flappy Buddy Server.
+        /// Empfängt den aktuellen Zustand des Spiels.
         /// </summary>
-        /// <param name="message"></param>
-        /// <returns>Das Taskobjekt welches die asynchrone ausfuehrung repraesentiert</returns>
-        public async Task Send(string message)
+        private static async Task<PlayState?> ReceivePlayStateAsync(WebSocket webSocket)
         {
+            await using var webSocketStream = WebSocketStream.CreateReadableMessageStream(webSocket);
+            PlayState? playState;
+            try
+            {
+                playState = await JsonSerializer.DeserializeAsync<PlayState>(webSocketStream);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Fehler: {e}");
+                return null;
+            }
+            
 #if DEBUG
-            Console.WriteLine("Send: " + message);
+            Console.WriteLine($"Receive: {JsonSerializer.Serialize(playState)}");
 #endif
-            await _webSocket!.SendAsync(
-                new ArraySegment<byte>(_encoding.GetBytes(message)),
-                messageType: WebSocketMessageType.Text,
-                endOfMessage: true,
-                cancellationToken: CancellationToken.None);
-        } 
+            return playState;
+        }
 
+        /// <summary>
+        /// Sendet das Ergebnis des Spielzugs an den Flappy Buddy Server.
+        /// </summary>
+        private async Task SendResponseAsync(WebSocket webSocket, bool playResult)
+        {
+            await using var writeStream =
+                WebSocketStream.CreateWritableMessageStream(webSocket, WebSocketMessageType.Text);
+            var responseMessage = CreateResponseMessage(playResult);
+            
+#if DEBUG
+            Console.WriteLine($"Send: {responseMessage}");
+#endif
+            await writeStream.WriteAsync(_encoding.GetBytes(responseMessage)).ConfigureAwait(false);
+        }
+
+        private async Task ListenAsync()
+        {
+            while (_webSocket?.State == WebSocketState.Open)
+            {
+                var playState = await ReceivePlayStateAsync(_webSocket).ConfigureAwait(false);
+                var playResult = _bot.Play(playState);
+                await SendResponseAsync(_webSocket, playResult).ConfigureAwait(false);
+            }
+        }
+
+        /// <summary>
+        /// Erzeugt die Antwort für den Server.
+        /// </summary>
+        private static string CreateResponseMessage(bool fly)
+        {
+            return JsonSerializer.Serialize(new {fly});
+        }
+        
         public FlappyBuddyWebsocketClient(IBot bot)
         {
             _bot = bot;
-        }
-
-        private async Task Listen()
-        {
-            ArraySegment<byte> buffer = new ArraySegment<byte>(new byte[1024]);
-            while (_webSocket?.State == WebSocketState.Open)
-            {
-                using (var ms = new MemoryStream())
-                {
-                    WebSocketReceiveResult result;
-                    do
-                    {
-                        result = _webSocket.ReceiveAsync(buffer, CancellationToken.None).Result;
-                        if (result.MessageType == WebSocketMessageType.Close)
-                        {
-                            _webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, string.Empty, CancellationToken.None).Wait();
-                            break;
-                        }
-                        else
-                        {
-                            ms.Write(buffer.Array!, buffer.Offset, result.Count);
-                        }
-                    }
-                    while (!result.EndOfMessage);
-
-                    ms.Seek(0, SeekOrigin.Begin);
-                    if (result.MessageType == WebSocketMessageType.Binary)
-                    {
-                        using (var reader = new StreamReader(ms, Encoding.UTF8))
-                        {
-                            var stringData = await reader.ReadToEndAsync();
-#if DEBUG
-                            Console.WriteLine($"Receive: {stringData}");
-#endif
-                            OnMessage?.Invoke(this, stringData);
-                            HandleMessage(stringData);
-                        }
-                    }
-                }
-            }
-
-        }
-
-        private void HandleMessage(string stringData)
-        {
-            try
-            {
-                PlayState? playState = JsonSerializer.Deserialize<PlayState>(stringData);
-                if (playState is null)
-                    throw new JsonException("Unable to Deserialize " + stringData);
-
-                string reaction = "{\"fly\":" + JsonSerializer.Serialize(_bot.Play(playState)) + "}";
-                Send(reaction).Wait();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Got Ping Message");
-                Console.WriteLine("Fehler: " + ex.Message);
-            }
         }
 
         public void Dispose()
